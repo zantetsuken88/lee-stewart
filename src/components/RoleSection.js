@@ -57,8 +57,9 @@ const useStyles = makeStyles({
   }
 });
 
-export default function RoleSection ({year, jobDescription, yearRange, jobTitle, company}) {
+export default function RoleSection ({year, jobDescription, yearRange, jobTitle, company, chipClass}) {
   const classes = useStyles();
+  const importedClasses = chipClass();
   return (
     <Grid
       container
@@ -80,20 +81,20 @@ export default function RoleSection ({year, jobDescription, yearRange, jobTitle,
           className={classes.jobDescription}
         >
           <CardContent className={classes.jobStatsContainer}>
-            <Chip className={classes.jobStats}
+            <Chip className={importedClasses.outer}
                   style={{ gridColumnStart: '1' }}
                   color='secondary'
                   variant='outlined'
-                  label={<Typography variant='body2'>{yearRange}</Typography>}/>
-            <Chip className={classes.jobStats}
+                  label={<Typography variant='body2'>{company}</Typography>}/>
+            <Chip className={importedClasses.inner}
                   style={{ gridColumnStart: '2' }}
                   color='secondary'
                   label={<Typography variant='body2'>{jobTitle}</Typography>}/>
-            <Chip className={classes.jobStats}
+            <Chip className={importedClasses.outer}
                   style={{ gridColumnStart: '3' }}
                   color='secondary'
                   variant='outlined'
-                  label={<Typography variant='body2'>{company}</Typography>}/>
+                  label={<Typography variant='body2'>{yearRange}</Typography>}/>
           </CardContent>
           {jobDescription}
         </Card>

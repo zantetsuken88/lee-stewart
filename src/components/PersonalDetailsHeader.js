@@ -51,7 +51,7 @@ export default function PersonalDetailsHeader() {
                  alt='Lee Stewart'
                  color='transparent'
                />
-               <Typography variant='h4' color='red' >
+               <Typography variant='h4' style={{ color: '#f50057'}} >
                  Lee Stewart
                </Typography>
              </Paper>

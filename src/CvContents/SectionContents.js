@@ -1,6 +1,41 @@
+import React from 'react';
+import Breadcrumbs from '@material-ui/core/Breadcrumbs';
+import Typography from '@material-ui/core/Typography';
+
 export const personalProfileContents =
-  'Creative, proactive and engaging with an inquisitive nature and desire to learn. Has a '
-  + 'background in various disciplines, both creative and technical, resulting in a broad skill-set '
-  + 'and a unique approach to problem-solving. Approaches work with a desire to achieve and '
-  + 'excel. Has had a life-long obsession with technology and continues to pursue this through '
-  + 'self-study and work-based learning.';
+  <Typography color='secondary' > Creative, proactive and engaging with an inquisitive nature and desire to learn. Has a
+  background in various disciplines, both creative and technical, resulting in a broad skill-set
+  and a unique approach to problem-solving. Approaches work with a desire to achieve and
+  excel. Has had a life-long obsession with technology and continues to pursue this through
+  self-study and work-based learning. </Typography>;
+
+export const skills = [
+  'Java',
+  'Postgres',
+  'React',
+  'AWS'
+];
+
+export const skillsContents =
+  <Breadcrumbs separator='~' maxItems={10} itemsAfterCollapse={4} itemsBeforeCollapse={4}>
+    { skills.map((skill, i) => <Typography key={`skill-${i}`}>{skill}</Typography>)}
+  </Breadcrumbs>;
+
+const interests = [
+  'Gaming',
+  'Technology',
+  'Coding',
+  'Foreign Languages',
+  'Problem Solving',
+  'Web',
+  'Creative Writing',
+  'Personal',
+  'Fitness',
+  'Socialising',
+  'Cooking and Baking'
+];
+
+export const interestContents =
+  <Breadcrumbs separator='~' maxItems={10} itemsAfterCollapse={4} itemsBeforeCollapse={4}>
+    { interests.map((interest, i) => <Typography key={`interest-${i}`}>{interest}</Typography>)}
+  </Breadcrumbs>;

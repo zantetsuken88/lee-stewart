@@ -1,6 +1,14 @@
 import React from 'react';
 import { Typography } from '@material-ui/core';
 
+export const starlingSoftwareEngineer =
+  <Typography variant='body2' style={{ padding: '3px'}}>
+    • Full Stack Engineer working principally with Java/Postgres back end, and React front end<br/>
+    • Currently working in the Marketplace and Public APIs team, spanning the Starling 3rd party integrations marketplace, Developer Sandbox, public API and Open Banking<br/>
+    • Was part of the small team that delivered the Starling personal and business Euro currency accounts and SEPA payment scheme.<br/>
+    • Founder of Starlings internal LGBTQ+ employee network, and part of the team that mobilised "Always Open" diversity and inclusiveness forum.
+  </Typography>;
+
 export const genomicsDevOpsDescription =
   <Typography variant='body2' style={{ padding: '3px'}}>
    • Internally promoted after demonstrating an interest and aptitude for scripting and automation.<br/>

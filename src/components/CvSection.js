@@ -5,9 +5,9 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
   sectionTitle: {
-    backgroundColor: 'transparent',
+    backgroundColor: 'black',
     padding: '0px 5px',
-    color: 'black',
+    color: 'white',
     placeSelf: 'center',
     gridColumnStart: '2'
   },
@@ -16,7 +16,7 @@ const useStyles = makeStyles({
     display: 'grid'
   },
   sectionContent: {
-    color: 'darkgray',
+    color: 'rgba(0, 0, 0, 0.54)',
     margin: '1px'
   },
   container: {
@@ -40,7 +40,7 @@ export default function CvSection ({sectionTitle, sectionContent}) {
         </Paper>
       </Grid>
       <Grid item xs>
-        <Typography variant='body2' className={classes.sectionContent}>{sectionContent}</Typography>
+        {sectionContent}
       </Grid>
     </Grid>
   )

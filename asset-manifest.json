@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/lee-stewart/static/css/main.4c44d309.chunk.css",
+    "main.js": "/lee-stewart/static/js/main.4a56c1a6.chunk.js",
+    "main.js.map": "/lee-stewart/static/js/main.4a56c1a6.chunk.js.map",
+    "runtime-main.js": "/lee-stewart/static/js/runtime-main.171366b0.js",
+    "runtime-main.js.map": "/lee-stewart/static/js/runtime-main.171366b0.js.map",
+    "static/js/2.3469e7fe.chunk.js": "/lee-stewart/static/js/2.3469e7fe.chunk.js",
+    "static/js/2.3469e7fe.chunk.js.map": "/lee-stewart/static/js/2.3469e7fe.chunk.js.map",
+    "index.html": "/lee-stewart/index.html",
+    "precache-manifest.c1bd7a98f7ca9692f4427221ab74574c.js": "/lee-stewart/precache-manifest.c1bd7a98f7ca9692f4427221ab74574c.js",
+    "service-worker.js": "/lee-stewart/service-worker.js",
+    "static/css/main.4c44d309.chunk.css.map": "/lee-stewart/static/css/main.4c44d309.chunk.css.map",
+    "static/js/2.3469e7fe.chunk.js.LICENSE": "/lee-stewart/static/js/2.3469e7fe.chunk.js.LICENSE",
+    "static/media/github-logo.svg": "/lee-stewart/static/media/github-logo.76d344f0.svg",
+    "static/media/linkedin.svg": "/lee-stewart/static/media/linkedin.007eb41a.svg",
+    "static/media/mail.svg": "/lee-stewart/static/media/mail.bfe8a6b5.svg",
+    "static/media/profilephoto.jpg": "/lee-stewart/static/media/profilephoto.bc5ac94f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.171366b0.js",
+    "static/js/2.3469e7fe.chunk.js",
+    "static/css/main.4c44d309.chunk.css",
+    "static/js/main.4a56c1a6.chunk.js"
+  ]
+}

@@ -43,8 +43,7 @@ const useStyles = makeStyles({
     backgroundColor: '#f3eded63',
     textAlign: 'left',
     marginBottom: '5px',
-    padding: '0px 5px',
-    border: '1px solid #968a8a'
+    padding: '0px 5px'
   },
   jobStatsContainer: {
     gridTemplateColumns: '1fr 1fr 1fr',

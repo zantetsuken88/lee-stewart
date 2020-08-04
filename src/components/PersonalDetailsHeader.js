@@ -19,7 +19,7 @@ const useStyles = makeStyles(
     paper: {
       backgroundColor: 'transparent',
       width: 'fit-content',
-      padding: '0px 5px',
+      padding: '5px 5px',
       color: '#f50057',
       borderColor: 'grey',
       placeSelf: 'center'

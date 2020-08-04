@@ -1,17 +1,13 @@
 import React from 'react';
 import RoleSection from './RoleSection';
-import {
-  genomicsDevOpsDescription,
-  genomicsITDescription, mondrianITDescription,
-  starlingSoftwareEngineer
-} from '../CvContents/RolesContents';
+import { aldSeniorCredit, monarchRecruitment, uniqueVoice, universityWestEngland } from '../CvContents/RolesContents';
 
-export default function CodingRoles ({ chipClass }) {
+export default function PreCodingRoles ({ chipClass }) {
   return (
     <div>
       <RoleSection
         year='2014'
-        jobDescription={starlingSoftwareEngineer}
+        jobDescription={uniqueVoice}
         yearRange='Aug 2013 - Aug 2014'
         jobTitle='Actor & Workshop Leader'
         company='Unique Voice CIC'
@@ -19,7 +15,7 @@ export default function CodingRoles ({ chipClass }) {
       />
       <RoleSection
         year='2014'
-        jobDescription={genomicsDevOpsDescription}
+        jobDescription={monarchRecruitment}
         yearRange='Dec 2013 - July 2014'
         jobTitle='Cover Teacher'
         company='Monarch Recruitment'
@@ -27,7 +23,7 @@ export default function CodingRoles ({ chipClass }) {
       />
       <RoleSection
         year='2013'
-        jobDescription={genomicsITDescription}
+        jobDescription={universityWestEngland}
         yearRange='Sep 2012 - Jun 2013'
         jobTitle='PGCE PCET'
         company='University of the West of England'
@@ -35,7 +31,7 @@ export default function CodingRoles ({ chipClass }) {
       />
       <RoleSection
         year='2012'
-        jobDescription={mondrianITDescription}
+        jobDescription={aldSeniorCredit}
         yearRange='Jan 2012 - Aug 2012'
         jobTitle='Senior Credit Controller'
         company='ALD Automotive'

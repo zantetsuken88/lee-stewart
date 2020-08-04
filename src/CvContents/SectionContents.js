@@ -1,6 +1,8 @@
 import React from 'react';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Typography from '@material-ui/core/Typography';
+import TripOrigin from '@material-ui/icons/TripOrigin';
+import { red, purple } from "../components/colors";
 
 export const personalProfileContents =
   <Typography color='secondary' > Creative, proactive and engaging with an inquisitive nature and desire to learn. Has a
@@ -11,13 +13,25 @@ export const personalProfileContents =
 
 export const skills = [
   'Java',
+  'Guice',
+  'JUnit',
+  'Mockito',
+  'Javascript',
+  'HTML',
+  'CSS',
+  'Jest',
+  'material-ui',
+  'Bootstrap',
   'Postgres',
   'React',
-  'AWS'
+  'AWS',
+  'Elasticsearch',
+  'Humio',
+  'Git'
 ];
 
 export const skillsContents =
-  <Breadcrumbs separator='~' maxItems={10} itemsAfterCollapse={4} itemsBeforeCollapse={4}>
+  <Breadcrumbs separator={<TripOrigin style={{ color: red }} fontSize='small'/>} maxItems={20} itemsAfterCollapse={4} itemsBeforeCollapse={4}>
     { skills.map((skill, i) => <Typography key={`skill-${i}`}>{skill}</Typography>)}
   </Breadcrumbs>;
 
@@ -36,6 +50,6 @@ const interests = [
 ];
 
 export const interestContents =
-  <Breadcrumbs separator='~' maxItems={10} itemsAfterCollapse={4} itemsBeforeCollapse={4}>
+  <Breadcrumbs separator={<TripOrigin style={{ color: purple }} fontSize='small'/>} maxItems={20} itemsAfterCollapse={4} itemsBeforeCollapse={4}>
     { interests.map((interest, i) => <Typography key={`interest-${i}`}>{interest}</Typography>)}
   </Breadcrumbs>;

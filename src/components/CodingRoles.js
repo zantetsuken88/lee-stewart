@@ -1,8 +1,8 @@
 import React from 'react';
 import RoleSection from './RoleSection';
 import {
-  genomicsDevOpsDescription,
-  genomicsITDescription, mondrianITDescription,
+  genomicsDevOps,
+  genomicsIT, mondrianIT,
   starlingSoftwareEngineer
 } from '../CvContents/RolesContents';
 
@@ -12,14 +12,14 @@ export default function CodingRoles ({ chipClass }) {
       <RoleSection
         year='Now'
         jobDescription={starlingSoftwareEngineer}
-        yearRange='Jan 2018 - Now'
+        yearRange='Jan 2018 - Jul 2020'
         jobTitle='Software Engineer'
         company='Starling Bank'
         chipClass={chipClass}
       />
       <RoleSection
         year='2017'
-        jobDescription={genomicsDevOpsDescription}
+        jobDescription={genomicsDevOps}
         yearRange='July 2016 - Nov 2017'
         jobTitle='DevOps Engineer'
         company='Genomics England'
@@ -27,7 +27,7 @@ export default function CodingRoles ({ chipClass }) {
       />
       <RoleSection
         year='2016'
-        jobDescription={genomicsITDescription}
+        jobDescription={genomicsIT}
         yearRange='Nov 2015 - July 2016'
         jobTitle='IT Analyst'
         company='Genomics England'
@@ -35,7 +35,7 @@ export default function CodingRoles ({ chipClass }) {
       />
       <RoleSection
         year='2015'
-        jobDescription={mondrianITDescription}
+        jobDescription={mondrianIT}
         yearRange='Sept 2015 - Nov 2016'
         jobTitle='IT Assistant'
         company='Mondrian London'

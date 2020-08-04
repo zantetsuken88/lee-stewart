@@ -4,12 +4,12 @@ import { Typography } from '@material-ui/core';
 export const starlingSoftwareEngineer =
   <Typography variant='body2' style={{ padding: '3px'}}>
     • Full Stack Engineer working principally with Java/Postgres back end, and React front end<br/>
-    • Currently working in the Marketplace and Public APIs team, spanning the Starling 3rd party integrations marketplace, Developer Sandbox, public API and Open Banking<br/>
+    • Worked in the Marketplace and Public APIs team, spanning the Starling 3rd party integrations marketplace, Developer Sandbox, public API and Open Banking<br/>
     • Was part of the small team that delivered the Starling personal and business Euro currency accounts and SEPA payment scheme.<br/>
     • Founder of Starlings internal LGBTQ+ employee network, and part of the team that mobilised "Always Open" diversity and inclusiveness forum.
   </Typography>;
 
-export const genomicsDevOpsDescription =
+export const genomicsDevOps =
   <Typography variant='body2' style={{ padding: '3px'}}>
    • Internally promoted after demonstrating an interest and aptitude for scripting and automation.<br/>
    • Responsibilities revolved around aiding Genomics England in delivery of its infrastructure and platforms.<br/>
@@ -17,7 +17,7 @@ export const genomicsDevOpsDescription =
    • Have gained a multitude of skills including Git, Python scripting, Saltstack, Packer, VMware, Vagrant, Terraform
   </Typography>;
 
-export const genomicsITDescription =
+export const genomicsIT =
   <Typography variant='body2' style={{ padding: '3px'}}>
     • Assumed control over internal IT support and systems administration.
     These responsibilities had previously been divided and handled by non-specialists and
@@ -30,9 +30,44 @@ export const genomicsITDescription =
     service.
   </Typography>;
 
-export const mondrianITDescription =
+export const mondrianIT =
   <Typography variant='body2' style={{ padding: '3px'}}>
     • Structured training role, reporting to Director of IT<br/>
     • Responsible for resolution of day to day IT related queries and problems via service desk
     management system.
+  </Typography>;
+
+export const uniqueVoice =
+  <Typography variant='body2' style={{ padding: '3px'}}>
+    • Learned and performed roles on stage or film as directed.<br/>
+    • Interpreted and memorised lines on provided scripts, including directorial notes
+    and actions.<br/>
+    • Worked alongside other actors and technicians in order to develop strong relation-
+    ships and rapports on and off stage/screen.
+  </Typography>;
+
+export const monarchRecruitment =
+  <Typography variant='body2' style={{ padding: '3px'}}>
+    • Used current IT in every lesson in order to promote up to date skills and creative
+    teaching.<br/>
+    • Was able to adapt and improvise to quickly changing circumstances and variable
+    working environments.
+  </Typography>;
+
+export const universityWestEngland =
+  <Typography variant='body2' style={{ padding: '3px'}}>
+    • PGCE PCET (Post-Compulsory Education and Training)<br/>
+    • Qualified to teach Performing Arts disciplines at post-GCSE level<br/>
+    • Passed at Masters Level
+  </Typography>;
+
+export const aldSeniorCredit =
+  <Typography variant='body2' style={{ padding: '3px'}}>
+    • Responsibilities included ownership of the Synertec Prism mailing system for the depart ment.
+    This included 1st line support for users on the team, staff training and contact with Synertec. <br/>
+    • Used in-house software and Excel to generate regular reports using V-Lookups and Pivot
+    Tables. <br/>
+    • Was responsible for undertaking the team leader’s duties in their absence. <br/>
+    • First point of contact for team queries and ad-hoc training. <br/>
+    • Handled escalated telephone calls.
   </Typography>;

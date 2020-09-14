@@ -26,17 +26,17 @@ const useStyles = makeStyles({
   }
 });
 
+const VERSION = { CODING: 'CODING', PRE_CODING: 'PRE_CODING' };
+
 function App() {
   const classes = useStyles();
-  const [state, setState] = React.useState({
-     checked: false,
-   });
+  const [version, setVersion] = React.useState(VERSION.CODING);
 
-  const handleChange = name => event => {
-    setState({ ...state, [name]: event.target.checked });
+  const toggleCvVersion = () => {
+    version === VERSION.CODING ? setVersion(VERSION.PRE_CODING) : setVersion(VERSION.CODING);
   };
 
-  const cvVersion = !state.checked ? 'Acting, Misc and Education' : 'Software Engineer';
+  const toggleText = version === VERSION.CODING ? 'Acting, Misc and Education' : 'Software Engineer';
 
   return (
   <main className="App-header">
@@ -54,16 +54,16 @@ function App() {
     >
       <Grid item xs={4} style={{ display: 'flex', justifyContent: 'flex-end' }}>
         <Typography variant='button'
-                    style={ state.checked ? { color: purple } : { color: red }}
+                    style={ version === VERSION.PRE_CODING ? { color: purple } : { color: red }}
         >
-          {`View ${cvVersion}`}
+          {`View ${toggleText}`}
         </Typography>
       </Grid>
       <Grid item xs={1}>
-        <Switch className={classes.switchChecked} checked={state.checked} onChange={handleChange('checked')}/>
+        <Switch className={classes.switchChecked} checked={version === VERSION.PRE_CODING} onChange={toggleCvVersion}/>
       </Grid>
     </Grid>
-      {state.checked ? <PreCodingRoles chipClass={chipStyles} /> : <CodingRoles chipClass={codingChipStyles} />}
+      {version === VERSION.PRE_CODING ? <PreCodingRoles chipClass={chipStyles} /> : <CodingRoles chipClass={codingChipStyles} />}
       <CvSection
         sectionTitle='Skills'
         sectionContent={skillsContents}

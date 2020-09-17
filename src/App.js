@@ -32,15 +32,15 @@ function App() {
   const classes = useStyles();
   const [version, setVersion] = React.useState(VERSION.CODING);
 
-  const checkVersionIsCoding = () => {
+  const isCodingVersion = () => {
     return version === VERSION.CODING;
   }
 
   const toggleCvVersion = () => {
-    checkVersionIsCoding() ? setVersion(VERSION.PRE_CODING) : setVersion(VERSION.CODING);
+    isCodingVersion() ? setVersion(VERSION.PRE_CODING) : setVersion(VERSION.CODING);
   };
 
-  const toggleText = checkVersionIsCoding() ? 'Acting, Misc and Education' : 'Software Engineer';
+  const toggleText = isCodingVersion() ? 'Acting, Misc and Education' : 'Software Engineer';
 
   return (
   <main className="App-header">
@@ -58,16 +58,16 @@ function App() {
     >
       <Grid item xs={4} style={{ display: 'flex', justifyContent: 'flex-end' }}>
         <Typography variant='button'
-                    style={ checkVersionIsCoding() ? { color: red } : { color: purple }}
+                    style={ isCodingVersion() ? { color: red } : { color: purple }}
         >
           {`View ${toggleText}`}
         </Typography>
       </Grid>
       <Grid item xs={1}>
-        <Switch className={classes.switchChecked} checked={!checkVersionIsCoding()} onChange={toggleCvVersion}/>
+        <Switch className={classes.switchChecked} checked={!isCodingVersion()} onChange={toggleCvVersion}/>
       </Grid>
     </Grid>
-      {checkVersionIsCoding() ? <CodingRoles chipClass={codingChipStyles} /> :  <PreCodingRoles chipClass={chipStyles} />}
+      {isCodingVersion() ? <CodingRoles chipClass={codingChipStyles} /> :  <PreCodingRoles chipClass={chipStyles} />}
       <CvSection
         sectionTitle='Skills'
         sectionContent={skillsContents}

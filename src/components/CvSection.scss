@@ -1,0 +1,22 @@
+.section-title {
+  background-color: black;
+  padding: 0 5px;
+  color: white;
+  place-self: center;
+  grid-column-start: 2;
+}
+
+.title-container {
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 10rem 1fr;
+  margin: 1rem 0;
+}
+
+.contents-container {
+  margin-left: 1rem;
+}

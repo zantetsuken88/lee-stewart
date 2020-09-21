@@ -71,3 +71,8 @@ export const aldSeniorCredit =
     • First point of contact for team queries and ad-hoc training. <br/>
     • Handled escalated telephone calls.
   </Typography>;
+
+export const deMontfort =
+  <Typography variant='body2' style={{ padding: '3px'}}>
+    • Graduated with 2:1 Honours
+  </Typography>

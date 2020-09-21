@@ -11,13 +11,13 @@ export default function RoleSection ({year, jobDescription, yearRange, jobTitle,
       <div className='label-container'>
         <svg viewBox='0 0 20 100' className='year-line-top' overflow='hidden'>
           <line x1='50%' y1='0' x2='50%' y2='74%'
-                style={{ stroke: 'black', strokeWidth: '1' }}/>
+                style={{ stroke: 'black', strokeWidth: '0.5' }}/>
         </svg>
         <WorkOutlineIcon className='year-label' fontSize='large' />
-        <Typography variant='h6' className='year-text' >{year}</Typography>
+        <Typography variant='button' className='year-text' >{year}</Typography>
         <svg viewBox='0 0 20 100' className='year-line-bottom' overflow='hidden'>
           <line x1='50%' y1='33%' x2='50%' y2='100%'
-                style={{ stroke: 'black', strokeWidth: '1' }}/>
+                style={{ stroke: 'black', strokeWidth: '0.5' }}/>
         </svg>
       </div>
       <div>

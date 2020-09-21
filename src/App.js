@@ -34,15 +34,16 @@ function App() {
       className='app-section-container'
     >
       <div className='app-switcher-bar'>
+        <Typography variant='overline' className={'app-switcher-bar-'.concat(isCodingVersion() ? 'coding' : 'pre-coding')}>Experience: </Typography>
         <ToggleButtonGroup value={version} exclusive onChange={toggleCvVersion} size='small'>
           <ToggleButton value={VERSION.CODING}>
             <Typography variant='button' className='app-switcher-bar-coding'>
-              View Software Engineering
+              Software Engineering
             </Typography>
           </ToggleButton>
           <ToggleButton value={VERSION.PRE_CODING} >
             <Typography variant='button' className='app-switcher-bar-pre-coding'>
-              Acting, Misc and Education
+              Everything Else
             </Typography>
           </ToggleButton>
         </ToggleButtonGroup>
@@ -57,9 +58,7 @@ function App() {
         sectionTitle='Interests'
         sectionContent={interestContents}
         />
-        <div style={{ display: 'grid' }}>
-          <Contact/>
-        </div>
+        <Contact/>
     </main>
   );
 }

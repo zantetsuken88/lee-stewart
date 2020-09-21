@@ -42,31 +42,31 @@
   }
 }
 
-  .label-container {
-    grid-template-rows: 50% 32px 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 10px;
-    place-items: center;
-    display: grid;
-    max-height: 13rem;
-  }
+.label-container {
+  grid-template-rows: 50% 32px 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 10px;
+  place-items: center;
+  display: grid;
+  max-height: 13rem;
+}
 
-  .job-description {
-    font-size: small;
-    color: darkgray;
-    background-color: #f3eded63;
-    text-align: left;
-    margin-bottom: 5px;
-    padding: 0 5px
-  }
+.job-description {
+  font-size: small;
+  color: #4d4545 !important;
+  background-color: #f3eded63 !important;
+  text-align: left;
+  margin: 5px 0 5px 1rem;
+  padding: 0 5px
+}
 
-  .job-stats-container {
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 5px 0;
-    display: grid
-  }
+.job-stats-container {
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 5px 0;
+  display: grid
+}
 
-  .job-stats {
-    margin: 0 5px;
-    place-self: center
-  }
+.job-stats {
+  margin: 0 5px;
+  place-self: center
+}

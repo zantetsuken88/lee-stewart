@@ -1,6 +1,6 @@
 import React from 'react';
 import RoleSection from './RoleSection';
-import { aldSeniorCredit, monarchRecruitment, uniqueVoice, universityWestEngland } from '../CvContents/RolesContents';
+import { aldSeniorCredit, monarchRecruitment, uniqueVoice, universityWestEngland, deMontfort } from '../CvContents/RolesContents';
 
 export default function PreCodingRoles ({ chipClass }) {
   return (
@@ -50,6 +50,7 @@ export default function PreCodingRoles ({ chipClass }) {
         jobTitle='BA(Hons) Performing Arts'
         company='DeMontfort University'
         chipClass={chipClass}
+        jobDescription={deMontfort}
       />
     </div>
   )

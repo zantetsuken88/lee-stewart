@@ -1,85 +1,28 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
 import Chip from '@material-ui/core/Chip';
-import { makeStyles } from '@material-ui/core/styles';
 import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
 import { Card, CardContent, Typography } from '@material-ui/core';
-
-const useStyles = makeStyles({
-  roleContainer: {
-    "&:last-of-type": {
-      "& line": {
-        visibility: 'hidden'
-      }
-    }
-  },
-  yearLabel: {
-    color: 'black',
-    gridColumnStart: '2',
-    gridRowStart: '2',
-    justifySelf: 'center'
-  },
-  yearText: {
-    gridColumnStart: '3',
-    gridRowStart: '2',
-    alignSelf: 'end',
-    justifySelf: 'left',
-    color: 'black'
-  },
-  yearLine: {
-    display: 'flex',
-    gridColumnStart: '2',
-    gridRowStart: '3',
-    justifySelf: 'center'
-  },
-  labelContainer: {
-    gridTemplateColumns: '1fr 1fr 1fr 1fr',
-    gridTemplateRows: '50% 32px auto',
-    display: 'grid',
-  },
-  jobDescription: {
-    fontSize: 'small',
-    color: 'darkgray',
-    backgroundColor: '#f3eded63',
-    textAlign: 'left',
-    marginBottom: '5px',
-    padding: '0px 5px'
-  },
-  jobStatsContainer: {
-    gridTemplateColumns: '1fr 1fr 1fr',
-    padding: '5px 0px',
-    display: 'grid'
-  },
-  jobStats: {
-    margin: '0px 5px',
-    placeSelf: 'center'
-  }
-});
+import './RoleSection.scss';
 
 export default function RoleSection ({year, jobDescription, yearRange, jobTitle, company, chipClass}) {
-  const classes = useStyles();
   const importedClasses = chipClass();
   return (
-    <Grid
-      container
-      direction='row'
-      justify='space-around'
-      alignItems='center'
-      className={classes.roleContainer}
-    >
-      <Grid item xs={3} className={classes.labelContainer}>
-        <WorkOutlineIcon className={classes.yearLabel} fontSize='large' />
-        <Typography variant='h6' className={classes.yearText} >{year}</Typography>
-        <svg height='160' width='10' className={classes.yearLine}>
-          <line x1='5' y1='0' x2='5' y2='160'
-                style={{ stroke: 'black', strokeWidth: '2' }}/>
+    <div className='role-container'>
+      <div className='label-container'>
+        <svg viewBox='0 0 20 100' className='year-line-top' overflow='hidden'>
+          <line x1='50%' y1='0' x2='50%' y2='74%'
+                style={{ stroke: 'black', strokeWidth: '1' }}/>
         </svg>
-      </Grid>
-      <Grid item xs>
-        <Card
-          className={classes.jobDescription}
-        >
-          <CardContent className={classes.jobStatsContainer}>
+        <WorkOutlineIcon className='year-label' fontSize='large' />
+        <Typography variant='h6' className='year-text' >{year}</Typography>
+        <svg viewBox='0 0 20 100' className='year-line-bottom' overflow='hidden'>
+          <line x1='50%' y1='33%' x2='50%' y2='100%'
+                style={{ stroke: 'black', strokeWidth: '1' }}/>
+        </svg>
+      </div>
+      <div>
+        <Card className='job-description'>
+          <CardContent className='job-stats-container'>
             <Chip className={importedClasses.outer}
                   style={{ gridColumnStart: '1' }}
                   color='secondary'
@@ -97,7 +40,7 @@ export default function RoleSection ({year, jobDescription, yearRange, jobTitle,
           </CardContent>
           {jobDescription}
         </Card>
-      </Grid>
-    </Grid>
+      </div>
+    </div>
   );
 }

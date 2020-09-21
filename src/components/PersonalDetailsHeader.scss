@@ -1,0 +1,48 @@
+//$red: #f50057;
+
+@import 'colours';
+
+.header {
+  &-container {
+    display: grid;
+    grid-template-rows: 240px;
+    grid-template-columns: 192px 1fr;
+  }
+  &-description {
+    grid-column-start: 2;
+    color: $red;
+    place-self: center;
+    margin: 15px;
+  }
+  .details-bar {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 120px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+  }
+
+  .cell {
+    color: lightgrey;
+    border-color: grey;
+    padding: 0;
+  }
+
+  .paper {
+    background-color: transparent;
+    width: fit-content;
+    padding: 5px 5px;
+    color: #f50057;
+    border-color: grey;
+    place-self: center
+  }
+
+  .text {
+    margin: 1px
+  }
+
+  .logo {
+    place-self: center;
+    height: 64px;
+    width: 64px
+  }
+}

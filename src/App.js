@@ -34,15 +34,15 @@ function App() {
       className='app-section-container'
     >
       <div className='app-switcher-bar'>
-        <Typography variant='overline' className={'app-switcher-bar-'.concat(isCodingVersion() ? 'coding' : 'pre-coding')}>Experience: </Typography>
+        <Typography variant='button' className={'app-switcher-bar-'.concat(isCodingVersion() ? 'coding' : 'pre-coding')}>Experience: </Typography>
         <ToggleButtonGroup value={version} exclusive onChange={toggleCvVersion} size='small'>
           <ToggleButton value={VERSION.CODING}>
-            <Typography variant='button' className='app-switcher-bar-coding'>
+            <Typography variant='caption' className='app-switcher-bar-coding'>
               Software Engineering
             </Typography>
           </ToggleButton>
           <ToggleButton value={VERSION.PRE_CODING} >
-            <Typography variant='button' className='app-switcher-bar-pre-coding'>
+            <Typography variant='caption' className='app-switcher-bar-pre-coding'>
               Everything Else
             </Typography>
           </ToggleButton>

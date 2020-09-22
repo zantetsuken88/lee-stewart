@@ -1,3 +1,5 @@
+@import "colours";
+
 .section-title {
   background-color: black;
   padding: 0 5px;
@@ -19,4 +21,17 @@
 
 .contents-container {
   margin-left: 1rem;
+  & p {
+    color: $text;
+  }
+  & .skills {
+    & svg {
+      color: $red;
+    }
+  }
+  & .interests {
+    & svg {
+      color: $purple;
+    }
+  }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Paper, Typography } from '@material-ui/core';
+import profilePhoto from '../media/profilePhoto.jpg';
 import './PersonalDetailsHeader.scss';
 
 export default function PersonalDetailsHeader() {
@@ -8,12 +9,11 @@ export default function PersonalDetailsHeader() {
       <div>
         <Paper className='paper' elevation={4}>
           <img
-            src={require('../media/profilephoto.jpg')}
-            style={{height: '192px', width: '192px', gridColumnStart: '0'}}
+            src={profilePhoto}
             alt='Lee Stewart'
             color='transparent'
           />
-          <Typography variant='h4' style={{color: '#f50057'}}>
+          <Typography variant='h4'>
             Lee Stewart
           </Typography>
         </Paper>

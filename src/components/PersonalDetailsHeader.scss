@@ -32,11 +32,16 @@
   width: fit-content;
   padding: 5px 5px;
   border-color: grey;
-  place-self: center
-}
+  place-self: center;
 
-.text {
-  margin: 1px
+  & img {
+    height: 192px;
+  }
+
+  & h4 {
+    margin-left: 5px;
+    color: $red;
+  }
 }
 
 .logo {

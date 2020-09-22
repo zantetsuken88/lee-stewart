@@ -1,35 +1,33 @@
 import React from "react";
 import './Contact.scss'
+import githubLogo from '../media/githubLogo.svg';
+import mail from '../media/mail.svg';
+import linkedIn from '../media/linkedIn.svg';
+
+const ContactLink = ({link, img, alt}) => {
+  return <a href={link} target='_blank' rel='noopener noreferrer' className='logo'>
+    <img
+      src={img}
+      alt={alt}
+      color='transparent'/>
+  </a>;
+}
 
 export default function Contact() {
   return (
     <div className='contact-container'>
-      <a href='https://github.com/zantetsuken88' target='_blank' rel='noopener noreferrer' className='logo'>
-        <img
-          src={require('../media/github-logo.svg')}
-          alt='github logo'
-          color='transparent'/>
-      </a>
-      <a
-        href='mailto:lee.stewart@alumni.dmu.ac.uk'
-        target='_blank'
-        rel='noopener noreferrer'
-        className='logo'>
-        <img
-          src={require('../media/mail.svg')}
-          alt='mail logo'
-          color='transparent'/>
-      </a>
-      <a
-        href='https://www.linkedin.com/in/lee-stewart-684839ba/'
-        target='_blank'
-        rel='noopener noreferrer'
-        className='logo'>
-        <img
-          src={require('../media/linkedin.svg')}
-          alt='linkedin logo'
-          color='transparent'/>
-      </a>
+      <ContactLink
+        link='https://github.com/zantetsuken88'
+        img={githubLogo}
+        alt='GitHub'/>
+      <ContactLink
+        link='mailto:lee.stewart@alumni.dmu.ac.uk'
+        img={mail}
+        alt='Email'/>
+      <ContactLink
+        link='https://www.linkedin.com/in/lee-stewart-684839ba/'
+        img={linkedIn}
+        alt='LinkedIn'/>
     </div>
   );
 }

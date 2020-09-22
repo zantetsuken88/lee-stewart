@@ -1,8 +1,8 @@
 import React from 'react';
 import RoleSection from './RoleSection';
-import { aldSeniorCredit, monarchRecruitment, uniqueVoice, universityWestEngland, deMontfort } from '../CvContents/RolesContents';
+import { aldSeniorCredit, monarchRecruitment, uniqueVoice, universityWestEngland, deMontfort } from '../cvcontents/rolesContents';
 
-export default function PreCodingRoles ({ chipClass }) {
+export default function PreCodingRoles () {
   return (
     <div>
       <RoleSection
@@ -11,7 +11,7 @@ export default function PreCodingRoles ({ chipClass }) {
         yearRange='Aug 2013 - Aug 2014'
         jobTitle='Actor & Workshop Leader'
         company='Unique Voice CIC'
-        chipClass={chipClass}
+        chipClass='-pre-coding'
       />
       <RoleSection
         year='2014'
@@ -19,7 +19,7 @@ export default function PreCodingRoles ({ chipClass }) {
         yearRange='Dec 2013 - July 2014'
         jobTitle='Cover Teacher'
         company='Monarch Recruitment'
-        chipClass={chipClass}
+        chipClass='-pre-coding'
       />
       <RoleSection
         year='2013'
@@ -27,7 +27,7 @@ export default function PreCodingRoles ({ chipClass }) {
         yearRange='Sep 2012 - Jun 2013'
         jobTitle='PGCE PCET'
         company='University of the West of England'
-        chipClass={chipClass}
+        chipClass='-pre-coding'
       />
       <RoleSection
         year='2012'
@@ -35,21 +35,21 @@ export default function PreCodingRoles ({ chipClass }) {
         yearRange='Jan 2012 - Aug 2012'
         jobTitle='Senior Credit Controller'
         company='ALD Automotive'
-        chipClass={chipClass}
+        chipClass='-pre-coding'
       />
       <RoleSection
         year='2012'
         yearRange='Feb 2011 - Jan 2012'
         jobTitle='Credit Controller'
         company='ALD Automotive'
-        chipClass={chipClass}
+        chipClass='-pre-coding'
       />
       <RoleSection
         year='2010'
         yearRange='Oct 2007 - May 2010'
         jobTitle='BA(Hons) Performing Arts'
         company='DeMontfort University'
-        chipClass={chipClass}
+        chipClass='-pre-coding'
         jobDescription={deMontfort}
       />
     </div>

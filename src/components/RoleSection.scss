@@ -1,3 +1,5 @@
+@import "colours";
+
 .role-container {
   display: grid;
   grid-template-columns: 10rem 1fr;
@@ -49,24 +51,52 @@
   place-items: center;
   display: grid;
   max-height: 13rem;
+  & line {
+    stroke: black;
+    stroke-width: 0.5;
+  }
 }
 
 .job-description {
   font-size: small;
-  color: #4d4545 !important;
+  color: $text !important;
   background-color: #f3eded63 !important;
   text-align: left;
   margin: 5px 0 5px 1rem;
-  padding: 0 5px
+  padding: 0 5px;
+  & p {
+    padding: 3px
+  }
 }
 
 .job-stats-container {
   grid-template-columns: 1fr 1fr 1fr;
   padding: 5px 0;
-  display: grid
+  display: grid;
+  justify-content: space-evenly;
 }
 
-.job-stats {
+.chip {
   margin: 0 5px;
-  place-self: center
+  place-self: center;
+  &-coding {
+    &-outer {
+      border: 1px solid $red;
+      color: $red;
+    }
+    &-inner {
+      color: white;
+      background-color: $red;
+    }
+  }
+  &-pre-coding {
+    &-outer {
+      border: 1px solid $purple;
+      color: $purple;
+    }
+    &-inner {
+      color: white;
+      background-color: $purple;
+    }
+  }
 }

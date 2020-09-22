@@ -1,5 +1,3 @@
-@import 'components/colours';
-
 .App {
   text-align: center;
 }
@@ -8,27 +6,7 @@
   background-color: #fdfdfd;
   display: grid;
   align-items: center;
-  max-width: 1200px;
   font-size: calc(10px + 2vmin);
   color: white;
-  margin: 10px 10%;
-}
-
-.app-section-container {
-  display: grid;
-  grid-template-columns: 1fr 15rem;
-}
-
-.app-switcher-bar {
-  align-self: center;
-  grid-column-start: 2;
-  margin: 10px 0;
-
-  &-coding {
-    color: $red;
-  }
-
-  &-pre-coding {
-    color: $purple;
-  }
+  margin: 10px 15%;
 }

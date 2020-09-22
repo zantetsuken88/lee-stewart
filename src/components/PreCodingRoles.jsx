@@ -1,6 +1,6 @@
 import React from 'react';
 import RoleSection from './RoleSection';
-import { aldSeniorCredit, monarchRecruitment, uniqueVoice, universityWestEngland, deMontfort } from '../cvcontents/rolesContents';
+import { aldSeniorCredit, monarchRecruitment, uniqueVoice, universityWestEngland, deMontfort, aldCredit } from '../cvcontents/rolesContents';
 
 export default function PreCodingRoles () {
   return (
@@ -43,6 +43,7 @@ export default function PreCodingRoles () {
         jobTitle='Credit Controller'
         company='ALD Automotive'
         chipClass='-pre-coding'
+        jobDescription={aldCredit}
       />
       <RoleSection
         year='2010'

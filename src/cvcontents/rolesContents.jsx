@@ -63,7 +63,7 @@ export const universityWestEngland =
 
 export const aldSeniorCredit =
   <Typography variant='body2'>
-    • Responsibilities included ownership of the Synertec Prism mailing system for the depart ment.
+    • Responsibilities included ownership of the Synertec Prism mailing system for the department.
     This included 1st line support for users on the team, staff training and contact with Synertec. <br/>
     • Used in-house software and Excel to generate regular reports using V-Lookups and Pivot
     Tables. <br/>
@@ -75,4 +75,10 @@ export const aldSeniorCredit =
 export const deMontfort =
   <Typography variant='body2'>
     • Graduated with 2:1 Honours
+  </Typography>
+
+export const aldCredit =
+  <Typography variant='body2'>
+    • Responsible for managing a portfolio of vehicle hire and hire purchase accounts in arrears, chasing for late <br/>
+    payment and escalating where necessary.
   </Typography>

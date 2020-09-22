@@ -2,16 +2,24 @@
 
 .role-container {
   display: grid;
-  grid-template-columns: 10rem 1fr;
-  align-items: center;
-  &:last-of-type {
-    & .year-line-bottom {
-      visibility: hidden
+  grid-template-columns: 100%;
+  align-items: stretch;
+}
+
+@media only screen and (min-width: 860px) {
+  .role-container {
+    grid-template-columns: 10rem 1fr;
+
+    &:last-of-type {
+      & .year-line-bottom {
+        visibility: hidden
+      }
     }
-  }
-  &:first-of-type {
-    & .year-line-top {
-      visibility: hidden;
+
+    &:first-of-type {
+      & .year-line-top {
+        visibility: hidden;
+      }
     }
   }
 }
@@ -35,6 +43,8 @@
     justify-self: center;
     grid-row-start: 1;
     grid-column-start: 2;
+    max-height: 100%;
+    max-width: 100%;
   }
   &-bottom {
     display: flex;
@@ -45,40 +55,75 @@
 }
 
 .label-container {
-  grid-template-rows: 50% 32px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 10px;
-  place-items: center;
-  display: grid;
-  max-height: 13rem;
-  & line {
-    stroke: black;
-    stroke-width: 0.5;
+  visibility: hidden;
+  max-height: 0;
+}
+
+@media only screen and (min-width: 860px) {
+  .label-container {
+    visibility: visible;
+    grid-template-rows: 1fr 1em 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 10px;
+    place-items: stretch;
+    display: grid;
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 0;
+    min-width: 0;
+
+    & line {
+      stroke: black;
+      stroke-width: 0.04;
+    }
   }
 }
 
 .job-description {
   font-size: small;
-  color: $text !important;
-  background-color: #f3eded63 !important;
+  color: $text;
+  background-color: #f3eded63;
   text-align: left;
-  margin: 5px 0 5px 1rem;
+  margin: 5px 0;
   padding: 0 5px;
   & p {
     padding: 3px
   }
 }
 
+@media only screen and (min-width: 860px) {
+  .job-description {
+    margin: 5px 0 5px 1rem;
+  }
+}
+
 .job-stats-container {
-  grid-template-columns: 1fr 1fr 1fr;
   padding: 5px 0;
   display: grid;
   justify-content: space-evenly;
 }
 
+@media only screen and (max-width: 860px) {
+  .job-stats-container {
+    grid-row-start: 1;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 860px) {
+  .job-stats-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 860px) {
+  .chip {
+    place-self: center;
+  }
+}
+
 .chip {
   margin: 0 5px;
-  place-self: center;
   &-coding {
     &-outer {
       border: 1px solid $red;

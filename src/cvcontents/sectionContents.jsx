@@ -2,6 +2,8 @@ import React from 'react';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Typography from '@material-ui/core/Typography';
 import TripOrigin from '@material-ui/icons/TripOrigin';
+import './sectionContents.scss';
+import { StylesProvider } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 
 export const PersonalProfileContents = () =>
@@ -14,9 +16,11 @@ export const PersonalProfileContents = () =>
   </Typography>;
 
 export const SkillsContents = ({ attributes, crumbsStyle }) =>
-  <Breadcrumbs className={crumbsStyle} separator={<TripOrigin fontSize='small'/>} maxItems={20} itemsAfterCollapse={4} itemsBeforeCollapse={4}>
-    { attributes.map((attribute, i) => <Typography key={`skill-${i}`}>{attribute}</Typography>)}
-  </Breadcrumbs>;
+  <StylesProvider injectFirst>
+    <Breadcrumbs className={crumbsStyle} separator={<TripOrigin fontSize='small'/>} maxItems={20} itemsAfterCollapse={4} itemsBeforeCollapse={4}>
+      { attributes.map((attribute, i) => <Typography key={`skill-${i}`}>{attribute}</Typography>)}
+    </Breadcrumbs>
+  </StylesProvider>;
 
   SkillsContents.propTypes = {
     attributes: PropTypes.array,

@@ -1,0 +1,7 @@
+@media only screen and (max-width: 860px) {
+  .interests {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: start;
+  }
+}

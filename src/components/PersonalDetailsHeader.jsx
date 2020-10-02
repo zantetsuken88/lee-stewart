@@ -6,18 +6,16 @@ import './PersonalDetailsHeader.scss';
 export default function PersonalDetailsHeader() {
   return (
     <div className='header-container'>
-      <div>
-        <Paper className='paper' elevation={4}>
-          <img
-            src={profilePhoto}
-            alt='Lee Stewart'
-            color='transparent'
-          />
-          <Typography variant='h4'>
-            Lee Stewart
-          </Typography>
-        </Paper>
-      </div>
+      <Paper className='paper' elevation={4}>
+        <img
+          src={profilePhoto}
+          alt='Lee Stewart'
+          color='transparent'
+        />
+        <Typography variant='h4'>
+          Lee Stewart
+        </Typography>
+      </Paper>
       <div className='header-description'>
         <Typography> Creative, proactive and engaging with an inquisitive nature and desire to learn. Has a
           background in various disciplines, both creative and technical, resulting in a broad skill-set

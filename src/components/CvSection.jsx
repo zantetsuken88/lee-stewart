@@ -1,8 +1,9 @@
 import React from 'react';
 import { Paper, Typography } from '@material-ui/core';
-import './CvSection.scss'
+import './CvSection.scss';
+import PropTypes from 'prop-types';
 
-export default function CvSection ({sectionTitle, sectionContent}) {
+export default function CvSection ({ sectionTitle, sectionContent }) {
   return (
     <div className='container'>
       <div className='title-container'>
@@ -14,5 +15,10 @@ export default function CvSection ({sectionTitle, sectionContent}) {
         {sectionContent}
       </div>
     </div>
-  )
+  );
 }
+
+CvSection.propTypes = {
+  sectionTitle: PropTypes.string,
+  sectionContent: PropTypes.object
+};

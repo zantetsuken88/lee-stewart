@@ -6,25 +6,22 @@ import {
   interestContents,
   skillsContents
 } from './cvcontents/sectionContents';
-import Contact from "./components/Contact";
-import CvBody from "./components/CvBody";
+import Contact from './components/Contact';
+import CvBody from './components/CvBody';
 
-function App() {
-  return (
+const App = () =>
   <main className="App-header">
-      <PersonalDetailsHeader/>
-      <CvBody/>
-      <CvSection
-        sectionTitle='Skills'
-        sectionContent={skillsContents}
-        />
-      <CvSection
-        sectionTitle='Interests'
-        sectionContent={interestContents}
-        />
-        <Contact/>
-    </main>
-  );
-}
+    <PersonalDetailsHeader/>
+    <CvBody/>
+    <CvSection
+      sectionTitle='Skills'
+      sectionContent={skillsContents}
+    />
+    <CvSection
+      sectionTitle='Interests'
+      sectionContent={interestContents}
+    />
+    <Contact/>
+  </main>;
 
 export default App;

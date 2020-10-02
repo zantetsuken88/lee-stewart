@@ -1,10 +1,10 @@
-import Typography from "@material-ui/core/Typography";
-import ToggleButtonGroup from "@material-ui/lab/ToggleButtonGroup";
-import ToggleButton from "@material-ui/lab/ToggleButton";
-import CodingRoles from "./CodingRoles";
-import PreCodingRoles from "./PreCodingRoles";
-import React from "react";
-import './CvBody.scss'
+import Typography from '@material-ui/core/Typography';
+import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
+import ToggleButton from '@material-ui/lab/ToggleButton';
+import CodingRoles from './CodingRoles';
+import PreCodingRoles from './PreCodingRoles';
+import React from 'react';
+import './CvBody.scss';
 
 const VERSION = { CODING: 'CODING', PRE_CODING: 'PRE_CODING' };
 
@@ -13,13 +13,13 @@ export default function CvBody() {
 
   const isCodingVersion = () => {
     return version === VERSION.CODING;
-  }
+  };
 
   const toggleCvVersion = () => {
     isCodingVersion() ? setVersion(VERSION.PRE_CODING) : setVersion(VERSION.CODING);
   };
 
-  return(
+  return (
     <>
       <div className='app-section-container'>
         <div className='app-switcher-bar'>
@@ -30,7 +30,7 @@ export default function CvBody() {
                 Software Engineering
               </Typography>
             </ToggleButton>
-            <ToggleButton value={VERSION.PRE_CODING} >
+            <ToggleButton value={VERSION.PRE_CODING}>
               <Typography variant='caption' className='app-switcher-bar-pre-coding'>
                 Everything Else
               </Typography>
@@ -38,8 +38,8 @@ export default function CvBody() {
           </ToggleButtonGroup>
         </div>
       </div>
-    {isCodingVersion() ? <CodingRoles/> :  <PreCodingRoles/>}
-  </>
-  )
+      {isCodingVersion() ? <CodingRoles/> :  <PreCodingRoles/>}
+    </>
+  );
 }
 

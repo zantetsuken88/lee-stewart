@@ -9,7 +9,7 @@ module.exports = {
         'eslint:recommended',
         'plugin:react/recommended'
     ],
-    ignorePatterns: [
+    'ignorePatterns': [
       '*.scss'
     ],
     'parserOptions': {
@@ -21,7 +21,7 @@ module.exports = {
     },
     'plugins': ['react'],
     'rules': {
-        'no-console': 'error',
+        'no-console': 'warn',
         'no-trailing-spaces': 'error',
         'no-undefined': 'error',
         'object-curly-spacing': [

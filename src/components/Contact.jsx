@@ -5,16 +5,15 @@ import mail from '../media/mail.svg';
 import linkedIn from '../media/linkedIn.svg';
 import PropTypes from 'prop-types';
 
-const ContactLink = ({ link, img, alt }) => {
-  return (
-    <a href={link} target='_blank' rel='noopener noreferrer' className='logo'>
-      <img
-        src={img}
-        alt={alt}
-        color='transparent'
-      />
-    </a>);
-};
+const ContactLink = ({ link, img, alt }) => (
+  <a href={link} target='_blank' rel='noopener noreferrer' className='logo'>
+    <img
+      src={img}
+      alt={alt}
+      color='transparent'
+    />
+  </a>
+);
 
 ContactLink.propTypes = {
   link: PropTypes.string,

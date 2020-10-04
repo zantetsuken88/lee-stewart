@@ -2,8 +2,9 @@ import React from 'react';
 import { Paper, Typography } from '@material-ui/core';
 import './CvSection.scss';
 import PropTypes from 'prop-types';
+import { SkillsContents } from '../cvcontents/sectionContents';
 
-export default function CvSection ({ sectionTitle, sectionContent }) {
+export default function CvSection ({ sectionTitle, attributes, crumbsStyle }) {
   return (
     <div className='container'>
       <div className='title-container'>
@@ -12,7 +13,7 @@ export default function CvSection ({ sectionTitle, sectionContent }) {
         </Paper>
       </div>
       <div className='contents-container'>
-        {sectionContent}
+        <SkillsContents crumbsStyle={crumbsStyle} attributes={attributes} />
       </div>
     </div>
   );
@@ -20,5 +21,6 @@ export default function CvSection ({ sectionTitle, sectionContent }) {
 
 CvSection.propTypes = {
   sectionTitle: PropTypes.string,
-  sectionContent: PropTypes.object
+  attributes: PropTypes.array,
+  crumbsStyle: PropTypes.string
 };

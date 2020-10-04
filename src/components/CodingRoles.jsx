@@ -8,7 +8,7 @@ export default function CodingRoles () {
       <RoleSection data={data.starlingSoftwareEngineer} />
       <RoleSection data={data.genomicsDevOps} />
       <RoleSection data={data.genomicsIT} />
-      <RoleSection data={data.mondrianIT}/>
+      <RoleSection data={data.mondrianIT} />
     </div>
   );
 }

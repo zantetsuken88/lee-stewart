@@ -2,25 +2,16 @@ import React from 'react';
 import './App.scss';
 import PersonalDetailsHeader from './components/PersonalDetailsHeader';
 import CvSection from './components/CvSection';
-import {
-  interestContents,
-  skillsContents
-} from './cvcontents/sectionContents';
 import Contact from './components/Contact';
 import CvBody from './components/CvBody';
+import { skills, interests } from './cvcontents/sectionContents';
 
 const App = () =>
   <main className="App-header">
     <PersonalDetailsHeader/>
     <CvBody/>
-    <CvSection
-      sectionTitle='Skills'
-      sectionContent={skillsContents}
-    />
-    <CvSection
-      sectionTitle='Interests'
-      sectionContent={interestContents}
-    />
+    <CvSection crumbsStyle='skills' sectionTitle='Skills' attributes={skills} />
+    <CvSection crumbsStyle='interests' sectionTitle='Interests' attributes={interests} />
     <Contact/>
   </main>;
 

@@ -11,13 +11,9 @@ const VERSION = { CODING: 'CODING', PRE_CODING: 'PRE_CODING' };
 export default function CvBody() {
   const [version, setVersion] = React.useState(VERSION.CODING);
 
-  const isCodingVersion = () => {
-    return version === VERSION.CODING;
-  };
+  const isCodingVersion = () => version === VERSION.CODING;
 
-  const toggleCvVersion = () => {
-    isCodingVersion() ? setVersion(VERSION.PRE_CODING) : setVersion(VERSION.CODING);
-  };
+  const toggleCvVersion = () => isCodingVersion() ? setVersion(VERSION.PRE_CODING) : setVersion(VERSION.CODING);
 
   return (
     <>

@@ -4,11 +4,9 @@
 
 .App-header {
   background-color: #fdfdfd;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   align-items: center;
-  max-width: 1200px;
   font-size: calc(10px + 2vmin);
   color: white;
-  margin: 10px 10%;
+  margin: 10px 15%;
 }

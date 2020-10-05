@@ -22,17 +22,21 @@ module.exports = {
     'plugins': ['react'],
     'rules': {
         'no-console': 'warn',
-        'no-trailing-spaces': 'error',
-        'no-undefined': 'error',
+        'no-trailing-spaces': 'warn',
+        'no-undefined': 'warn',
         'object-curly-spacing': [
-            'error',
+            'warn',
             'always'
         ],
         'quotes': [
-            'error',
+            'warn',
             'single'
         ],
-        'semi': 'error',
+        'semi': 'warn',
+        'indent': [
+          'warn',
+          2
+        ],
     },
     'settings': {
         'linkComponents': [

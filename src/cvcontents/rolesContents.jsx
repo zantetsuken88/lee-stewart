@@ -11,7 +11,7 @@ export const data = {
     'jobTitle': 'Software Engineer',
     'company': 'Starling Bank',
     'chipClass': '-coding'
-    },
+  },
   'genomicsDevOps': {
     'year': '2017',
     'jobDescription': [

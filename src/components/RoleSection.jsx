@@ -1,7 +1,6 @@
 import React from 'react';
-import Chip from '@material-ui/core/Chip';
 import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
-import { Card, CardContent, Typography } from '@material-ui/core';
+import { Paper, Typography, Chip } from '@material-ui/core';
 import './RoleSection.scss';
 import PropTypes from 'prop-types';
 
@@ -18,23 +17,21 @@ export default function RoleSection ({ data }) {
           <line x1='50%' y1='0%' x2='50%' y2='100%'/>
         </svg>
       </div>
-      <div>
-        <Card className='job-description'>
-          <CardContent className='job-stats-container'>
-            <Chip className={`chip chip${data.chipClass} chip${data.chipClass}-outer`}
-                  variant='outlined'
-                  label={<Typography variant='body2'>{data.company}</Typography>}/>
-            <Chip className={`chip chip${data.chipClass} chip${data.chipClass}-inner`}
-                  label={<Typography variant='body2'>{data.jobTitle}</Typography>}/>
-            <Chip className={`chip chip${data.chipClass} chip${data.chipClass}-outer`}
-                  variant='outlined'
-                  label={<Typography variant='body2'>{data.yearRange}</Typography>}/>
-          </CardContent>
-          {data.jobDescription.map((bullet, i) =>
-            <Typography variant='body2' key={`data.jobTitle${i}`}>{bullet}</Typography>
-          )}
-        </Card>
-      </div>
+      <Paper elevation={3} classes={{ root: 'job-description' }}>
+        <div className='job-stats-container'>
+          <Chip className={`chip chip${data.chipClass} chip${data.chipClass}-outer`}
+            variant='outlined'
+            label={<Typography variant='body2'>{data.company}</Typography>}/>
+          <Chip className={`chip chip${data.chipClass} chip${data.chipClass}-inner`}
+            label={<Typography variant='body2'>{data.jobTitle}</Typography>}/>
+          <Chip className={`chip chip${data.chipClass} chip${data.chipClass}-outer`}
+            variant='outlined'
+            label={<Typography variant='body2'>{data.yearRange}</Typography>}/>
+        </div>
+        {data.jobDescription.map((bullet, i) =>
+          <Typography variant='body2' key={`data.jobTitle${i}`}>{bullet}</Typography>
+        )}
+      </Paper>
     </div>
   );
 }

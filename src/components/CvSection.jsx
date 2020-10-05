@@ -12,8 +12,8 @@ export default function CvSection ({ sectionTitle, attributes, crumbsStyle }) {
           <Typography variant='h5'>{sectionTitle}</Typography>
         </Paper>
       </div>
-      <div className='contents-container'>
-        <SkillsContents crumbsStyle={crumbsStyle} attributes={attributes} />
+      <div id={crumbsStyle} className='contents-container'>
+        <SkillsContents attributes={attributes}/>
       </div>
     </div>
   );

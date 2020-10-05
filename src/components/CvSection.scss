@@ -32,17 +32,17 @@
   & p {
     color: $text;
   }
+}
 
-  & .skills {
-    & svg {
-      color: $red;
-    }
+#skills {
+  & svg {
+    color: $red;
   }
+}
 
-  & .interests {
-    & svg {
-      color: $purple;
-    }
+#interests {
+  & svg {
+    color: $purple;
   }
 }
 

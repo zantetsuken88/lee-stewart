@@ -5,8 +5,6 @@ import CodingRoles from './CodingRoles';
 import PreCodingRoles from './PreCodingRoles';
 import React from 'react';
 import './CvBody.scss';
-import { StylesProvider } from '@material-ui/core/styles';
-
 
 const VERSION = { CODING: 'CODING', PRE_CODING: 'PRE_CODING' };
 
@@ -18,7 +16,7 @@ export default function CvBody() {
   const toggleCvVersion = () => isCodingVersion() ? setVersion(VERSION.PRE_CODING) : setVersion(VERSION.CODING);
 
   return (
-    <StylesProvider injectFirst>
+    <>
       <div className='app-section-container'>
         <div className='app-switcher-bar'>
           <Typography variant='button' className={'app-switcher-bar-'.concat(isCodingVersion() ? 'coding' : 'pre-coding')}>Experience: </Typography>
@@ -37,7 +35,7 @@ export default function CvBody() {
         </div>
       </div>
       {isCodingVersion() ? <CodingRoles/> :  <PreCodingRoles/>}
-    </StylesProvider>
+    </>
   );
 }
 

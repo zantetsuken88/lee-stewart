@@ -5,6 +5,11 @@
     display: grid;
     grid-template-rows: 240px 1fr;
     grid-template-columns: 100%;
+
+    @media only screen and (min-width: 860px) {
+      grid-template-rows: 240px;
+      grid-template-columns: 192px 1fr;
+    }
   }
 
   &-description {
@@ -12,20 +17,10 @@
     color: $red;
     place-self: center;
     margin: 1rem 0;
-  }
-}
 
-@media only screen and (min-width: 860px) {
-  .header {
-    &-container {
-      grid-template-rows: 240px;
-      grid-template-columns: 192px 1fr;
-    }
-
-    &-description {
+    @media only screen and (min-width: 860px) {
       grid-row-start: 1;
       grid-column-start: 2;
-      color: $red;
       margin: 0 3rem;
     }
   }

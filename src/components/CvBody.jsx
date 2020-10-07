@@ -20,7 +20,7 @@ export default function CvBody() {
       <div className='app-section-container'>
         <div className='app-switcher-bar'>
           <Typography variant='button' className={'app-switcher-bar-'.concat(isCodingVersion() ? 'coding' : 'pre-coding')}>Experience: </Typography>
-          <ToggleButtonGroup value={version} exclusive onChange={toggleCvVersion} size='small'>
+          <ToggleButtonGroup className='app-toggle-buttons' value={version} exclusive onChange={toggleCvVersion} size='small'>
             <ToggleButton value={VERSION.CODING}>
               <Typography variant='caption' className='app-switcher-bar-coding'>
                 Software Engineering

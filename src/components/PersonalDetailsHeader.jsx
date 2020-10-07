@@ -18,7 +18,7 @@ export default function PersonalDetailsHeader() {
         </Typography>
       </Paper>
       <div className='header-description'>
-        <PersonalProfileContents />
+        <PersonalProfileContents/>
       </div>
     </div>
   );

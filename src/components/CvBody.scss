@@ -2,15 +2,28 @@
 
 .app-section-container {
   display: grid;
-  grid-template-columns: 1fr 15rem;
+  grid-template-columns: 100%;
+
+  @media only screen and (min-width: 860px) {
+    grid-template-columns: 1fr 15rem;
+  }
+}
+
+.app-toggle-buttons {
+  display: flex;
 }
 
 .app-switcher-bar {
-  align-self: center;
-  grid-column-start: 2;
+  place-self: center;
+  grid-column-start: 1;
   margin: 10px 0;
 
-  &-coding {
+  @media only screen and (min-width: 860px) {
+    align-self: center;
+    grid-column-start: 2;
+  }
+
+    &-coding {
     color: $red;
   }
 

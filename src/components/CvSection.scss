@@ -15,23 +15,36 @@
 
 .container {
   display: grid;
-  grid-template-columns: 10rem 1fr;
-  margin: 1rem 0;
+  grid-template-columns: 100%;
+  grid-template-rows: 2rem 1fr;
+  margin: 1rem;
+
+  @media only screen and (min-width: 860px) {
+    grid-template-columns: 10rem 1fr;
+    margin: 2rem 0;
+  }
 }
 
 .contents-container {
-  margin-left: 1rem;
+  margin-top: 1rem;
   & p {
     color: $text;
   }
-  & .skills {
-    & svg {
-      color: $red;
-    }
+
+  @media only screen and (min-width: 860px) {
+    margin-left: 1rem;
+    margin-top: 0;
   }
-  & .interests {
-    & svg {
-      color: $purple;
-    }
+}
+
+#skills {
+  & svg {
+    color: $red;
+  }
+}
+
+#interests {
+  & svg {
+    color: $purple;
   }
 }

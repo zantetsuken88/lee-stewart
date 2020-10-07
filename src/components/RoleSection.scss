@@ -2,16 +2,22 @@
 
 .role-container {
   display: grid;
-  grid-template-columns: 10rem 1fr;
-  align-items: center;
-  &:last-of-type {
-    & .year-line-bottom {
-      visibility: hidden
+  grid-template-columns: 100%;
+  align-items: stretch;
+
+  @media only screen and (min-width: 860px) {
+    grid-template-columns: 10rem 1fr;
+
+    &:last-of-type {
+      & .year-line-bottom {
+        visibility: hidden
+      }
     }
-  }
-  &:first-of-type {
-    & .year-line-top {
-      visibility: hidden;
+
+    &:first-of-type {
+      & .year-line-top {
+        visibility: hidden;
+      }
     }
   }
 }
@@ -20,7 +26,7 @@
   color: black;
   grid-column-start: 2;
   grid-row-start: 2;
-  justify-self: center
+  place-self: center
 }
 
 .year-text {
@@ -35,6 +41,8 @@
     justify-self: center;
     grid-row-start: 1;
     grid-column-start: 2;
+    max-height: 100%;
+    max-width: 100%;
   }
   &-bottom {
     display: flex;
@@ -45,40 +53,56 @@
 }
 
 .label-container {
-  grid-template-rows: 50% 32px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: 0 10px;
-  place-items: center;
-  display: grid;
-  max-height: 13rem;
-  & line {
-    stroke: black;
-    stroke-width: 0.5;
+  visibility: hidden;
+  max-height: 0;
+
+  @media only screen and (min-width: 860px) {
+    visibility: visible;
+    grid-template-rows: 1fr 1em 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 10px;
+    place-items: stretch;
+    display: grid;
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 0;
+    min-width: 0;
+
+    & line {
+      stroke: black;
+      stroke-width: 0.04;
+    }
   }
 }
 
 .job-description {
   font-size: small;
-  color: $text !important;
-  background-color: #f3eded63 !important;
+  color: $text;
+  background-color: #f3eded63;
   text-align: left;
-  margin: 5px 0 5px 1rem;
-  padding: 0 5px;
-  & p {
-    padding: 3px
+  margin: 5px 0;
+  padding: 5px;
+
+  @media only screen and (min-width: 860px) {
+    margin: 5px 0 5px 1rem;
   }
 }
 
 .job-stats-container {
-  grid-template-columns: 1fr 1fr 1fr;
   padding: 5px 0;
   display: grid;
   justify-content: space-evenly;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media only screen and (max-width: 860px) {
+    grid-row-start: 1;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: unset;
+  }
 }
 
 .chip {
   margin: 0 5px;
-  place-self: center;
   &-coding {
     &-outer {
       border: 1px solid $red;
@@ -98,5 +122,9 @@
       color: white;
       background-color: $purple;
     }
+  }
+
+  @media only screen and (min-width: 860px) {
+    place-self: center;
   }
 }

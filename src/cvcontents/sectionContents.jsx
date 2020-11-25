@@ -7,11 +7,10 @@ import PropTypes from 'prop-types';
 
 export const PersonalProfileContents = () =>
   <Typography>
-    Creative, proactive and engaging with an inquisitive nature and desire to learn. Has a
-    background in various disciplines, both creative and technical, resulting in a broad skill-set
-    and a unique approach to problem-solving. Approaches work with a desire to achieve and
-    excel. Has had a life-long obsession with technology and continues to pursue this through
-    self-study and work-based learning.
+    Full stack software developer driven by a desire to solve problems, improve user and developer experience, and
+    to always be learning. Has a background in technical and creative disciplines, resulting in a broad skill-set
+    that benefits solo and team-based working. Strives to produce quality output consistently and reliably. Has had a life-long
+    obsession with technology and continues to pursue this through career goals, personal projects and self-directed learning.
   </Typography>;
 
 export const SkillsContents = ({ attributes }) =>

@@ -81,7 +81,7 @@
   background-color: #f3eded63;
   text-align: left;
   margin: 5px 0;
-  padding: 5px;
+  padding: 5px 10px 5px 0;
 
   @media only screen and (min-width: 860px) {
     margin: 5px 0 5px 1rem;
@@ -89,7 +89,7 @@
 }
 
 .job-stats-container {
-  padding: 5px 0;
+  padding: 5px 0 5px 10px;
   display: grid;
   justify-content: space-evenly;
   grid-template-columns: 1fr 1fr 1fr;
@@ -127,4 +127,36 @@
   @media only screen and (min-width: 860px) {
     place-self: center;
   }
+}
+
+.role-text {
+  margin: 1em 0;
+}
+
+.tooltip {
+  border-bottom: 1px dotted black;
+  cursor: help;
+  &:hover {
+    .tooltip-text {
+      visibility: visible;
+    }
+  }
+}
+
+.tooltip-text {
+  visibility: hidden;
+  background-color: #4d4545;
+  color: white;
+  text-align: center;
+  padding: 7px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  margin: 0 1rem;
+  max-width: 20rem;
+}
+
+ul {
+  list-style-position: outside;
+  padding-inline-start: 30px;
 }

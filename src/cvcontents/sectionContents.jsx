@@ -37,21 +37,30 @@ export const interests = [
   'Cooking and Baking'
 ];
 
-export const skills = [
+export const backEndSkills = [
   'Java',
   'Guice',
   'JUnit',
   'Mockito',
   'Javascript',
+  'PostgresQL',
+  'System Administration'
+];
+
+export const frontEndSkills = [
+  'Javascript',
   'HTML',
   'CSS',
   'Jest',
   'material-ui',
-  'Bootstrap',
-  'Postgres',
-  'React',
+  'React'
+];
+
+export const cicdSkills = [
   'AWS',
-  'Elasticsearch',
-  'Humio',
-  'Git'
+  'Git',
+  'Teamcity',
+  'Agile',
+  'Containerisation',
+  'Infrastructure as code'
 ];

@@ -3,6 +3,7 @@ import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
 import { Paper, Typography, Chip } from '@material-ui/core';
 import './RoleSection.scss';
 import PropTypes from 'prop-types';
+import TechStack from './TechStack';
 
 const tooltipBullet = (bullet, name, tooltipText) => {
   const [ before, after ] = bullet.split(name);
@@ -31,7 +32,7 @@ const getBullets = (data) => {
   return jobDescription;
 };
 
-export default function RoleSection ({ data }) {
+export default function RoleSection ({ data, logo }) {
   const jobDesc = getBullets(data);
 
   return (
@@ -48,7 +49,7 @@ export default function RoleSection ({ data }) {
       </div>
       <Paper elevation={3} classes={{ root: 'job-description' }}>
         <div className='job-stats-container'>
-          <Chip className={`chip chip${data.chipClass} chip${data.chipClass}-outer`}
+          <Chip avatar={logo} className={`chip chip${data.chipClass} chip${data.chipClass}-outer`}
             variant='outlined'
             label={<Typography variant='body2'>{data.company}</Typography>}/>
           <Chip className={`chip chip${data.chipClass} chip${data.chipClass}-inner`}
@@ -65,6 +66,7 @@ export default function RoleSection ({ data }) {
           }
           )}
         </ul>
+        { data.techStack && <TechStack techStack={data.techStack}/> }
       </Paper>
     </div>
   );
@@ -81,6 +83,8 @@ RoleSection.propTypes = {
     tooltips: PropTypes.shape({
       name: PropTypes.string,
       description: PropTypes.string
-    })
-  })
+    }),
+    techStack: PropTypes.string
+  }),
+  logo: PropTypes.object
 };

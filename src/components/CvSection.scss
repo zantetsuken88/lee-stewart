@@ -4,12 +4,11 @@
   background-color: black;
   padding: 0 5px;
   color: white;
-  place-self: center;
-  grid-column-start: 2;
+  place-self: end;
 }
 
 .title-container {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   display: grid;
 }
 
@@ -21,12 +20,12 @@
 
   @media only screen and (min-width: 860px) {
     grid-template-columns: 10rem 1fr;
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
 }
 
 .contents-container {
-  margin-top: 1rem;
+  align-self: center;
   & p {
     color: $text;
   }

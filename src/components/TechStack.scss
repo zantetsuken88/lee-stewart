@@ -1,0 +1,71 @@
+@import 'colours';
+
+.tech-stack-container {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  padding: 0 5px;
+}
+
+.stack-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+  place-items: center;
+  margin: 3px 0;
+}
+
+.stack-button {
+  background-color: transparent;
+  color: $red;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 5px;
+  &:focus {
+    outline: 0;
+  }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  &-selected {
+    background-color: rgba(0, 0, 0, 0.12);
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+.tech-icon {
+  height: 24px;
+  opacity: 0;
+  margin: 5px;
+  place-self: center;
+
+  &-hide {
+    animation: collapse-icons 350ms ease-in-out calc(var(--animation-order) * 100ms) both;
+  }
+
+  &-show {
+    animation: expand 350ms ease-in-out calc(var(--animation-order) * 100ms) both;
+  }
+}
+
+@keyframes expand {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes collapse-icons {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

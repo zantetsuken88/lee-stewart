@@ -18,7 +18,8 @@ export const data = {
     'chipClass': '-coding',
     'tooltips': {
       'Developer Sandbox': 'The Developer Sandbox is a publicly available demo environment for 3rd party app developers to test their apps against Starling\'s public API.'
-    }
+    },
+    'techStack': 'starling'
   },
   'genomicsDevOps': {
     'year': '2017',
@@ -33,7 +34,8 @@ export const data = {
     'chipClass': '-coding',
     'tooltips': {
       'Bioinformatics': 'Bioinformaticians at Genomics England are responsible for developing software that will help with efficiently sequencing and analysing genomes to identify potentially disease or cancer causing variants.'
-    }
+    },
+    'techStack': 'genomics'
   },
   'genomicsIT': {
     'year': '2016',

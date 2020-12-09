@@ -10,7 +10,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
   place-items: center;
-  margin: 3px 0;
+  margin: 3px 5px;
+
+  @media only screen and (max-width: 860px) {
+    grid-template-columns: repeat(auto-fill, 88px);
+  }
 }
 
 .stack-button {

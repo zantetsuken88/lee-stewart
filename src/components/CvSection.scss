@@ -5,6 +5,10 @@
   padding: 0 5px;
   color: white;
   place-self: end;
+
+  @media only screen and (max-width: 860px) {
+    place-self: auto;
+  }
 }
 
 .title-container {
@@ -14,13 +18,15 @@
 
 .container {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 10rem 1fr;
   grid-template-rows: 2rem 1fr;
-  margin: 1rem;
+  margin: 1rem 0;
+  grid-gap: 0;
 
-  @media only screen and (min-width: 860px) {
-    grid-template-columns: 10rem 1fr;
-    margin: 1rem 0;
+  @media only screen and (max-width: 860px) {
+    grid-template-columns: 100%;
+    margin: 1rem;
+    grid-gap: 5px;
   }
 }
 

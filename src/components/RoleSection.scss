@@ -112,6 +112,11 @@
       color: white;
       background-color: $red;
     }
+    &-clickable {
+      color: $red;
+      background-color: rgba($clickable, 0.05);
+      border: 1px solid $border-clickable;
+    }
   }
   &-pre-coding {
     &-outer {
@@ -121,6 +126,11 @@
     &-inner {
       color: white;
       background-color: $purple;
+    }
+    &-clickable {
+      color: $purple;
+      background-color: rgba($clickable, 0.05);
+      border: 1px solid $border-clickable;
     }
   }
 

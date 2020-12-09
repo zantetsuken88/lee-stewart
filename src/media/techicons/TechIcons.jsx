@@ -5,10 +5,10 @@ import react from './react.svg';
 import postgres from './postgres.svg';
 import aws from './aws.svg';
 import teamcity from './teamcity.svg';
-import git from '../githubLogo.svg';
+import git from '../github.svg';
 import jenkins from './jenkins.svg';
-import saltstack from './saltstack-icon.svg';
-import vmware from './vmwareLogo.svg';
+import saltstack from './saltstack.svg';
+import vmware from './vmware.svg';
 import mongo from './mongodb.svg';
 import javascript from './javascript.svg';
 
@@ -43,5 +43,8 @@ const generateIcons = (logos, iconClass) => logos.map((logo, i) => {
     .split('/')[4]
     .split('.')[0];
 
-  return <img className={`tech-icon ${iconClass}`} src={logo} alt={iconName} key={iconName} style={animationOrder}/>;
+  return <div className={`tech-icon ${iconClass}`} key={iconName} style={animationOrder}>
+    <img src={logo} alt={iconName}/>
+    <p>{iconName}</p>
+  </div>;
 });

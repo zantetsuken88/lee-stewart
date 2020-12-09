@@ -49,9 +49,15 @@ export default function RoleSection ({ data, logo }) {
       </div>
       <Paper elevation={3} classes={{ root: 'job-description' }}>
         <div className='job-stats-container'>
-          <Chip avatar={logo} className={`chip chip${data.chipClass} chip${data.chipClass}-outer`}
+          <Chip avatar={logo}
+            className={`chip chip${data.chipClass} chip${data.chipClass}-clickable`}
             variant='outlined'
-            label={<Typography variant='body2'>{data.company}</Typography>}/>
+            clickable
+            label={
+              <a className={`company-label${data.chipClass}`} href={data.website} target='_blank' rel='noopener noreferrer'>
+                <Typography  variant='body2'>{data.company}</Typography>
+              </a>
+            }/>
           <Chip className={`chip chip${data.chipClass} chip${data.chipClass}-inner`}
             label={<Typography variant='body2'>{data.jobTitle}</Typography>}/>
           <Chip className={`chip chip${data.chipClass} chip${data.chipClass}-outer`}
@@ -77,6 +83,7 @@ RoleSection.propTypes = {
     year: PropTypes.string,
     jobDescription: PropTypes.array,
     yearRange: PropTypes.string,
+    website: PropTypes.string,
     jobTitle: PropTypes.string,
     company: PropTypes.string,
     chipClass: PropTypes.string,

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Contact.scss';
-import githubLogo from '../media/githubLogo.svg';
+import githubLogo from '../media/github.svg';
 import mail from '../media/mail.svg';
 import linkedIn from '../media/linkedIn.svg';
 import PropTypes from 'prop-types';

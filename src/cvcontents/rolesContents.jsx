@@ -12,6 +12,7 @@ export const data = {
       'Founder of "Bend The Bank": Starling\'s internal LGBTQ+ employee network. Initially intended as a strictly social initiative, Bend The Bank became an officially sanctioned company network which provided LGBTQ+ staff with a platform to drive change in internal practise, ' +
       'culture and communications with increased focus on diverse inclusivity and representation. Providing individuals with the empowerment to bring their full, authentic selves to work.'
     ],
+    'website': 'https://www.starlingbank.com',
     'yearRange': 'Jan 2018 - Sept 2020',
     'jobTitle': 'Software Engineer',
     'company': 'Starling Bank',
@@ -19,7 +20,7 @@ export const data = {
     'tooltips': {
       'Developer Sandbox': 'The Developer Sandbox is a publicly available demo environment for 3rd party app developers to test their apps against Starling\'s public API.'
     },
-    'techStack': 'starling'
+    'techStack': 'starling',
   },
   'genomicsDevOps': {
     'year': '2017',
@@ -28,6 +29,7 @@ export const data = {
       'Supported Bioinformatics Developers, providing secure cloud computing infrastructure, build and deployment pipelines for their progressively developing genome sequencing and analysis software.',
       'Learned core skills in system administration, configuration, scripting, version control and agile principles facilitating a move into future software engineering roles.'
     ],
+    'website': 'https://www.genomicsengland.co.uk',
     'yearRange': 'July 2016 - Nov 2017',
     'jobTitle': 'DevOps Engineer',
     'company': 'Genomics England',
@@ -46,6 +48,7 @@ export const data = {
       'Identified opportunities for automating processes for efficiency, subsequently building a standardised image for rapid deployment to client machines.',
       'Self-taught basic command line navigation and scripting for Windows in order to custom build and deploy new hardware to staff'
     ],
+    'website': 'https://www.genomicsengland.co.uk',
     'yearRange': 'Nov 2015 - July 2016',
     'jobTitle': 'IT Analyst',
     'company': 'Genomics England',
@@ -57,6 +60,7 @@ export const data = {
       'Structured training role, reporting to Director of IT.',
       'Responsible for resolution of day to day IT related queries and problems via service desk management system.'
     ],
+    'website': 'https://www.seacontainerslondon.com',
     'yearRange': 'Sept 2015 - Nov 2016',
     'jobTitle': 'IT Assistant',
     'company': 'Mondrian London',
@@ -72,6 +76,7 @@ export const data = {
       'Established and maintained complex interpersonal connections with teachers, children, parents and colleagues - requiring highly adaptable social skills in order to communicate positively and effectively ' +
       'based on each set of individual circumstances and the interchangeable nature of the role.'
     ],
+    'website': 'https://www.uniquevoice.org',
     'yearRange': 'Aug 2013 - Aug 2014',
     'jobTitle': 'Actor & Workshop Leader',
     'company': 'Unique Voice CIC',
@@ -84,6 +89,7 @@ export const data = {
       'Was able to form relationships with pupils and assimilate the culture of unfamiliar schools at a moment\'s notice in order to maximise learning and reduce disruption to their established routines.',
       'Used current IT in every lesson in order to promote up to date skills and creative teaching.'
     ],
+    'website': 'https://www.monarcheducation.co.uk',
     'yearRange': 'Dec 2013 - July 2014',
     'jobTitle': 'Cover Teacher',
     'company': 'Monarch Recruitment',
@@ -99,6 +105,7 @@ export const data = {
       'Developed techniques in adjusting teaching style based on a diverse array of student backgrounds, learning styles and social needs.',
       'Passed at Masters Level.'
     ],
+    'website': 'https://www.uwe.ac.uk',
     'yearRange': 'Sep 2012 - Jun 2013',
     'jobTitle': 'PGCE PCET',
     'company': 'University of the West of England',
@@ -113,6 +120,7 @@ export const data = {
       'First point of contact for team queries and ad-hoc training.',
       'Handled telephone calls which had been escalated by the customer to a senior representative. Was effective at defusing difficult conversations and reaching mutually satisfactory resolutions to disputes'
     ],
+    'website': 'https://www.aldautomotive.co.uk',
     'yearRange': 'Jan 2012 - Aug 2012',
     'jobTitle': 'Senior Credit Controller',
     'company': 'ALD Automotive',
@@ -126,6 +134,7 @@ export const data = {
       'Consistently exceeded productivity expectations - taking on additional workload, responsibilities and training.',
       'Promoted in first year, ahead of directly competing, more experienced colleagues.'
     ],
+    'website': 'https://www.aldautomotive.co.uk',
     'yearRange': 'Feb 2011 - Jan 2012',
     'jobTitle': 'Credit Controller',
     'company': 'ALD Automotive',
@@ -141,6 +150,7 @@ export const data = {
       'Undertook a multitude of roles in original and collaborative theatre productions, responsible for devising, rehearsing, funding, marketing, technology and performance',
       'Graduated with 2:1 Honours.'
     ],
+    'website': 'https://www.dmu.ac.uk',
     'yearRange': 'Oct 2007 - May 2010',
     'jobTitle': 'BA(Hons) Performing Arts',
     'company': 'DeMontfort University',

@@ -9,20 +9,18 @@ import ald from './aldautomotive.ico';
 import monarch from './monarch.png';
 import './CompanyIcons.scss';
 
-const CreateCompanyLogo = (logo, link) => {
+const CreateCompanyLogo = (logo) => {
   const companyName = logo
     .split('/')[4]
     .split('.')[0];
-  return <a className='icon-container' href={link} target='_blank' rel='noopener noreferrer'>
-    <img className='company-icon' src={logo} alt={companyName}/>
-  </a>;
+  return <img className='company-icon' src={logo} alt={companyName}/>;
 };
 
-export const StarlingLogo = CreateCompanyLogo(starling, 'https://www.starlingbank.com');
-export const GenomicsLogo = CreateCompanyLogo(genomics, 'https://www.genomicsengland.co.uk');
-export const MondrianLogo = CreateCompanyLogo(mondrian, 'https://www.seacontainerslondon.com/');
-export const UniqueVoiceLogo = CreateCompanyLogo(uniqueVoice, 'https://uniquevoice.org/');
-export const UweLogo = CreateCompanyLogo(uwe, 'https://www.uwe.ac.uk/');
-export const DmuLogo = CreateCompanyLogo(dmu, 'https://www.dmu.ac.uk/');
-export const AldLogo = CreateCompanyLogo(ald, 'https://www.aldautomotive.co.uk/');
-export const MonarchLogo = CreateCompanyLogo(monarch, 'https://www.monarcheducation.co.uk/');
+export const StarlingLogo = CreateCompanyLogo(starling);
+export const GenomicsLogo = CreateCompanyLogo(genomics);
+export const MondrianLogo = CreateCompanyLogo(mondrian);
+export const UniqueVoiceLogo = CreateCompanyLogo(uniqueVoice);
+export const UweLogo = CreateCompanyLogo(uwe);
+export const DmuLogo = CreateCompanyLogo(dmu);
+export const AldLogo = CreateCompanyLogo(ald);
+export const MonarchLogo = CreateCompanyLogo(monarch);

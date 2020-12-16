@@ -139,6 +139,19 @@
   }
 }
 
+.company-label {
+  display: grid;
+  grid-template-columns: 1fr 12px;
+
+  & img {
+    height: 11px;
+    place-self: end;
+    padding-bottom: 5px;
+    padding-left: 1px;
+    border-bottom: 1px $border-clickable solid;
+  }
+}
+
 .role-text {
   margin: 1em 0;
 }

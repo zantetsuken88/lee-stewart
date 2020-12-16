@@ -4,6 +4,7 @@ import { Paper, Typography, Chip } from '@material-ui/core';
 import './RoleSection.scss';
 import PropTypes from 'prop-types';
 import TechStack from './TechStack';
+import link from '../media/link-thin.svg';
 
 const tooltipBullet = (bullet, name, tooltipText) => {
   const [ before, after ] = bullet.split(name);
@@ -54,8 +55,9 @@ export default function RoleSection ({ data, logo }) {
             variant='outlined'
             clickable
             label={
-              <a className={`company-label${data.chipClass}`} href={data.website} target='_blank' rel='noopener noreferrer'>
-                <Typography  variant='body2'>{data.company}</Typography>
+              <a className='company-label' href={data.website} target='_blank' rel='noopener noreferrer'>
+                <Typography variant='body2'>{data.company}</Typography>
+                <img src={link} alt='link icon'/>
               </a>
             }/>
           <Chip className={`chip chip${data.chipClass} chip${data.chipClass}-inner`}

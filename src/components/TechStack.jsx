@@ -28,9 +28,11 @@ export default function TechStack ({ techStack }) {
 
   return (
     <div className='tech-stack-container'>
-      <button className={`stack-button ${buttonSelected}`} onClick={() => handleClick()}><Typography variant='caption'>Tech Stack</Typography></button>
+      <button className={`stack-button ${buttonSelected}`} onClick={() => handleClick()}>
+        <Typography variant='caption'>Tech Stack</Typography>
+      </button>
       <div className='stack-container'>
-        { <Icons iconClass={iconClass}/> }
+        <Icons iconClass={iconClass}/>
       </div>
     </div>
   );

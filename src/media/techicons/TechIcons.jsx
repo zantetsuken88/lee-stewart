@@ -1,5 +1,4 @@
 import React from 'react';
-// Starling Logos
 import java from './java.svg';
 import react from './react.svg';
 import postgres from './postgres.svg';

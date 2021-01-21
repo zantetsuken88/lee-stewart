@@ -54,25 +54,28 @@ export default function RoleSection ({ data, logo }) {
             className={`chip chip${data.chipClass} chip${data.chipClass}-clickable`}
             variant='outlined'
             clickable
+            component={'a'}
+            href={data.website}
+            target='_blank' rel='noopener noreferrer'
             label={
-              <a className='company-label' href={data.website} target='_blank' rel='noopener noreferrer'>
+              <div className='company-label'>
                 <Typography variant='body2'>{data.company}</Typography>
                 <img src={link} alt='link icon'/>
-              </a>
-            }/>
+              </div>
+            }
+          />
           <Chip className={`chip chip${data.chipClass} chip${data.chipClass}-inner`}
-            label={<Typography variant='body2'>{data.jobTitle}</Typography>}/>
+            label={<Typography variant='body2'>{data.jobTitle}</Typography>}
+          />
           <Chip className={`chip chip${data.chipClass} chip${data.chipClass}-outer`}
             variant='outlined'
-            label={<Typography variant='body2'>{data.yearRange}</Typography>}/>
+            label={<Typography variant='body2'>{data.yearRange}</Typography>}
+          />
         </div>
         <ul>
-          {jobDesc.map((bullet, i) => {
-            return <Typography className='role-text' variant='body2' component='li' key={`${data.jobTitle}${i}`}>
-              { bullet }
-            </Typography>;
-          }
-          )}
+          {jobDesc.map((bullet, i) => <Typography className='role-text' variant='body2' component='li' key={`${data.jobTitle}${i}`}>
+            { bullet }
+          </Typography>)}
         </ul>
         { data.techStack && <TechStack techStack={data.techStack}/> }
       </Paper>

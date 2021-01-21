@@ -10,7 +10,8 @@ module.exports = {
         'plugin:react/recommended'
     ],
     'ignorePatterns': [
-      '*.scss'
+      '*.scss',
+      '*.svg'
     ],
     'parserOptions': {
         'ecmaFeatures': {

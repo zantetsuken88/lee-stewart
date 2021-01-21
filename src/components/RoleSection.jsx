@@ -3,8 +3,39 @@ import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
 import { Paper, Typography, Chip } from '@material-ui/core';
 import './RoleSection.scss';
 import PropTypes from 'prop-types';
+import TechStack from './TechStack';
+import link from '../media/link-thin.svg';
 
-export default function RoleSection ({ data }) {
+const tooltipBullet = (bullet, name, tooltipText) => {
+  const [ before, after ] = bullet.split(name);
+  return (
+    <React.Fragment key={name}>
+      <span>{before}</span>
+      <span className='tooltip'>{name}<span className='tooltip-text'>{tooltipText}</span></span>
+      <span>{after}</span>
+    </React.Fragment>
+  );
+};
+
+const getBullets = (data) => {
+  const { jobDescription, tooltips } = data;
+  if (tooltips) {
+    Object.keys(tooltips).map(name =>
+      jobDescription.find((bullet, index, arr) => {
+        if (typeof(bullet) === 'string') {
+          return bullet.includes(name)
+          && arr.splice(index, 1, tooltipBullet(bullet, name, tooltips[name]));
+        }
+        return false;
+      })
+    );
+  }
+  return jobDescription;
+};
+
+export default function RoleSection ({ data, logo }) {
+  const jobDesc = getBullets(data);
+
   return (
     <div className='role-container'>
       <div className='label-container'>
@@ -19,18 +50,34 @@ export default function RoleSection ({ data }) {
       </div>
       <Paper elevation={3} classes={{ root: 'job-description' }}>
         <div className='job-stats-container'>
-          <Chip className={`chip chip${data.chipClass} chip${data.chipClass}-outer`}
+          <Chip avatar={logo}
+            className={`chip chip${data.chipClass} chip${data.chipClass}-clickable`}
             variant='outlined'
-            label={<Typography variant='body2'>{data.company}</Typography>}/>
+            clickable
+            component={'a'}
+            href={data.website}
+            target='_blank' rel='noopener noreferrer'
+            label={
+              <div className='company-label'>
+                <Typography variant='body2'>{data.company}</Typography>
+                <img src={link} alt='link icon'/>
+              </div>
+            }
+          />
           <Chip className={`chip chip${data.chipClass} chip${data.chipClass}-inner`}
-            label={<Typography variant='body2'>{data.jobTitle}</Typography>}/>
+            label={<Typography variant='body2'>{data.jobTitle}</Typography>}
+          />
           <Chip className={`chip chip${data.chipClass} chip${data.chipClass}-outer`}
             variant='outlined'
-            label={<Typography variant='body2'>{data.yearRange}</Typography>}/>
+            label={<Typography variant='body2'>{data.yearRange}</Typography>}
+          />
         </div>
-        {data.jobDescription.map((bullet, i) =>
-          <Typography variant='body2' key={`data.jobTitle${i}`}>{bullet}</Typography>
-        )}
+        <ul>
+          {jobDesc.map((bullet, i) => <Typography className='role-text' variant='body2' component='li' key={`${data.jobTitle}${i}`}>
+            { bullet }
+          </Typography>)}
+        </ul>
+        { data.techStack && <TechStack techStack={data.techStack}/> }
       </Paper>
     </div>
   );
@@ -41,8 +88,15 @@ RoleSection.propTypes = {
     year: PropTypes.string,
     jobDescription: PropTypes.array,
     yearRange: PropTypes.string,
+    website: PropTypes.string,
     jobTitle: PropTypes.string,
     company: PropTypes.string,
-    chipClass: PropTypes.string
-  })
+    chipClass: PropTypes.string,
+    tooltips: PropTypes.shape({
+      name: PropTypes.string,
+      description: PropTypes.string
+    }),
+    techStack: PropTypes.string
+  }),
+  logo: PropTypes.object
 };

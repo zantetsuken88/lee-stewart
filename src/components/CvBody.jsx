@@ -21,12 +21,12 @@ export default function CvBody() {
         <div className='app-switcher-bar'>
           <Typography variant='button' className={'app-switcher-bar-'.concat(isCodingVersion() ? 'coding' : 'pre-coding')}>Experience: </Typography>
           <ToggleButtonGroup className='app-toggle-buttons' value={version} exclusive onChange={toggleCvVersion} size='small'>
-            <ToggleButton value={VERSION.CODING}>
+            <ToggleButton classes={{ root: 'app-button', selected: 'app-button-selected' }} value={VERSION.CODING}>
               <Typography variant='caption' className='app-switcher-bar-coding'>
                 Software Engineering
               </Typography>
             </ToggleButton>
-            <ToggleButton value={VERSION.PRE_CODING}>
+            <ToggleButton classes={{ root: 'app-button', selected: 'app-button-selected' }} value={VERSION.PRE_CODING}>
               <Typography variant='caption' className='app-switcher-bar-pre-coding'>
                 Everything Else
               </Typography>

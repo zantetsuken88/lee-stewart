@@ -1,3 +1,5 @@
+@import "./components/colours";
+
 .App {
   text-align: center;
 }
@@ -9,4 +11,14 @@
   font-size: calc(10px + 2vmin);
   color: white;
   margin: 10px 15%;
+}
+
+a, a:hover, a:active {
+  text-decoration: none;
+  color: inherit;
+  & p {
+    padding-bottom: 1px;
+    padding-right: 3px;
+    border-bottom: 1px $border-clickable solid;
+  }
 }

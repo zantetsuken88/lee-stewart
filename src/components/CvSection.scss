@@ -4,29 +4,34 @@
   background-color: black;
   padding: 0 5px;
   color: white;
-  place-self: center;
-  grid-column-start: 2;
+  place-self: end;
+
+  @media only screen and (max-width: 860px) {
+    place-self: auto;
+  }
 }
 
 .title-container {
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   display: grid;
 }
 
 .container {
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 10rem 1fr;
   grid-template-rows: 2rem 1fr;
-  margin: 1rem;
+  margin: 1rem 0;
+  grid-gap: 0;
 
-  @media only screen and (min-width: 860px) {
-    grid-template-columns: 10rem 1fr;
-    margin: 2rem 0;
+  @media only screen and (max-width: 860px) {
+    grid-template-columns: 100%;
+    margin: 1rem;
+    grid-gap: 5px;
   }
 }
 
 .contents-container {
-  margin-top: 1rem;
+  align-self: center;
   & p {
     color: $text;
   }

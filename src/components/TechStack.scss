@@ -1,0 +1,90 @@
+@import 'colours';
+
+.tech-stack-container {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+  padding: 0 5px;
+}
+
+.stack-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+  margin: 3px 5px;
+
+  @media only screen and (max-width: 860px) {
+    grid-template-columns: repeat(auto-fill, 88px);
+  }
+}
+
+.stack-button {
+  background-color: rgba($clickable, 0.05);
+  color: $red;
+  border: 1px solid $border-clickable;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 0 5px;
+  place-self: center;
+  height: 28px;
+  &:focus {
+    outline: 0;
+  }
+  &:hover {
+    background-color: rgba($clickable, 0.12);
+  }
+  &-selected {
+    background-color: rgba($clickable, 0.15);
+    &:hover {
+      background-color: rgba($clickable, 0.2);
+    }
+  }
+}
+
+.tech-icon {
+  opacity: 0;
+  margin: 10px 0;
+  place-self: center;
+  display: grid;
+  grid-gap: 2px;
+  width: 100%;
+  height: 2rem;
+  & img {
+    height: 24px;
+    place-self: center;
+  }
+  & p {
+    place-self: center;
+    margin: 2px 0;
+    text-transform: capitalize;
+    color: $text;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 350;
+  }
+  &-hide {
+    animation: collapse-icons 350ms ease-in-out calc(var(--animation-order) * 100ms) both;
+  }
+
+  &-show {
+    animation: expand 350ms ease-in-out calc(var(--animation-order) * 100ms) both;
+  }
+}
+
+@keyframes expand {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes collapse-icons {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

@@ -11,7 +11,22 @@
 
 .app-toggle-buttons {
   display: flex;
+  background-color: rgba($clickable, 0.05);
 }
+
+.app-button {
+  border-color: $border-clickable;
+  &:hover {
+    background-color: rgba($clickable, 0.12);
+  }
+  &.app-button-selected {
+    background-color: rgba($clickable, 0.15);
+    &:hover {
+      background-color: rgba($clickable, 0.2);
+    }
+  }
+}
+
 
 .app-switcher-bar {
   place-self: center;

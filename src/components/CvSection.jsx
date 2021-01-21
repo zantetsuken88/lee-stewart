@@ -9,7 +9,7 @@ export default function CvSection ({ sectionTitle, attributes, crumbsStyle }) {
     <div className='container'>
       <div className='title-container'>
         <Paper className='section-title'>
-          <Typography variant='h5'>{sectionTitle}</Typography>
+          <Typography align='center' variant='h5'>{sectionTitle}</Typography>
         </Paper>
       </div>
       <div id={crumbsStyle} className='contents-container'>

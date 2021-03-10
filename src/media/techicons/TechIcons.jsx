@@ -10,6 +10,11 @@ import saltstack from './saltstack.svg';
 import vmware from './vmware.svg';
 import mongo from './mongodb.svg';
 import javascript from './javascript.svg';
+import typescript from './typescript.svg';
+import gatsby from './gatsby.svg';
+import netlify from './netlify.svg';
+import contentful from './contentful.svg';
+import firebase from './firebase.svg';
 
 const starlingLogos = [
   java,
@@ -29,8 +34,19 @@ const genomicsLogos = [
   git
 ];
 
+const helsaLogos = [
+  typescript,
+  react,
+  gatsby,
+  netlify,
+  contentful,
+  firebase,
+  git
+];
+
 export const Starling = ({ iconClass }) => generateIcons(starlingLogos, iconClass);
 export const Genomics = ({ iconClass }) => generateIcons(genomicsLogos, iconClass);
+export const Helsa = ({ iconClass }) => generateIcons(helsaLogos, iconClass);
 
 const generateIcons = (logos, iconClass) => logos.map((logo, i) => {
   const animationOrder = {

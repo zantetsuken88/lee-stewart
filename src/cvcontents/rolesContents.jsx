@@ -1,4 +1,19 @@
 export const data = {
+  'helsaHelps': {
+    'year': '2021',
+    'jobDescription': [
+      'Helsa Helps is a specialist platform connecting LGBTQ persons with mental health professionals who specialise and personally identify with LGBTQ specific stress and trauma.',
+      'Joined Helsa on a voluntary basis following the initial development phase of their platform which brought their MVP into production.',
+      'Sole software engineer for the organisation, performing adjustments and fixes on their existing stack (Gatsby, TypeScript, React, Contentful, Netlify) whilst simultaneously leading the build of their extended, fully realised mental healthcare platform.',
+      'Participated in Helsa\'s intensive application to Unity\'s "Rare Beauty Challenge" application as the sole software developer. Self-taught 3D game development skills in only a few weeks using Unity and C# in order to produce a proof-of-concept trailer for a VR "minority stress gaming experience".'
+    ],
+    'website': 'https://www.helsahelps.com',
+    'yearRange': 'Oct 2020 - Present',
+    'jobTitle': 'Software Engineer',
+    'company': 'Helsa Helps',
+    'chipClass': '-coding',
+    'techStack': 'helsa'
+  },
   'starlingSoftwareEngineer': {
     'year': '2020',
     'jobDescription': [

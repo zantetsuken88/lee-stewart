@@ -43,12 +43,15 @@ export const backEndSkills = [
   'JUnit',
   'Mockito',
   'Javascript',
+  'TypeScript',
+  'Node',
   'PostgresQL',
   'System Administration'
 ];
 
 export const frontEndSkills = [
   'Javascript',
+  'TypeScript',
   'HTML',
   'CSS',
   'Jest',

@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2f6ef17e6148ca6f56b1ae62d1b7f944",
+    "revision": "7aab8380283844a8453110ea27009dd4",
     "url": "/lee-stewart/index.html"
   },
   {
-    "revision": "22884072b4ca0f28ed0d",
+    "revision": "4e372d6d6b49ffcfdefd",
     "url": "/lee-stewart/static/css/main.4c8eab23.chunk.css"
   },
   {
-    "revision": "c49481d06093ffb91bd2",
-    "url": "/lee-stewart/static/js/2.fd29a1b8.chunk.js"
+    "revision": "72f10d2dff89da8df237",
+    "url": "/lee-stewart/static/js/2.00f5a563.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/lee-stewart/static/js/2.fd29a1b8.chunk.js.LICENSE.txt"
+    "url": "/lee-stewart/static/js/2.00f5a563.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "22884072b4ca0f28ed0d",
-    "url": "/lee-stewart/static/js/main.e9de6272.chunk.js"
+    "revision": "4e372d6d6b49ffcfdefd",
+    "url": "/lee-stewart/static/js/main.6a3e2705.chunk.js"
   },
   {
     "revision": "65ae7f3ba07f2a6d795f",
@@ -32,8 +32,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lee-stewart/static/media/aws.59e0a041.svg"
   },
   {
+    "revision": "a1907edd8467af36b005d4e8d535d310",
+    "url": "/lee-stewart/static/media/contentful.a1907edd.svg"
+  },
+  {
     "revision": "859442c8cd56ad7ddc817f59228b0f96",
     "url": "/lee-stewart/static/media/dmu.859442c8.svg"
+  },
+  {
+    "revision": "10b0719343408095f5a9b369e0787115",
+    "url": "/lee-stewart/static/media/firebase.10b07193.svg"
+  },
+  {
+    "revision": "569ef6a524d6da10ab5cd0459a64bfd2",
+    "url": "/lee-stewart/static/media/gatsby.569ef6a5.svg"
   },
   {
     "revision": "55315ae1ac95f2c0073370206827cf0d",
@@ -72,6 +84,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lee-stewart/static/media/mongodb.2985235d.svg"
   },
   {
+    "revision": "ecb5ec57f305689a6dc44a0828e4b893",
+    "url": "/lee-stewart/static/media/netlify.ecb5ec57.svg"
+  },
+  {
     "revision": "f16a2cda4a160e5aafbab5f2aa49c526",
     "url": "/lee-stewart/static/media/postgres.f16a2cda.svg"
   },
@@ -98,6 +114,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "8a20890b4cac719f6b58a46f9f7efce9",
     "url": "/lee-stewart/static/media/teamcity.8a20890b.svg"
+  },
+  {
+    "revision": "3aeee2292aa7770ccf0aec8e43bdaaf5",
+    "url": "/lee-stewart/static/media/typescript.3aeee229.svg"
   },
   {
     "revision": "8dbc62738e59555882b09dd84bcc47d6",

@@ -8,6 +8,8 @@ import dmu from './dmu.svg';
 import ald from './aldautomotive.ico';
 import monarch from './monarch.png';
 import helsa from './helsa.png';
+import optimly from './optimly.svg';
+import faculty from './faculty.svg';
 import './CompanyIcons.scss';
 
 const CreateCompanyLogo = (logo) => {
@@ -26,3 +28,5 @@ export const DmuLogo = CreateCompanyLogo(dmu);
 export const AldLogo = CreateCompanyLogo(ald);
 export const MonarchLogo = CreateCompanyLogo(monarch);
 export const HelsaLogo = CreateCompanyLogo(helsa);
+export const OptimlyLogo = CreateCompanyLogo(optimly);
+export const FacultyLogo = CreateCompanyLogo(faculty);

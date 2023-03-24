@@ -1,4 +1,35 @@
 export const data = {
+  'faculty': {
+    'year': '2023',
+    'yearRange': 'Feb 2022 - Present',
+    'jobDescription': [
+      'Individual contributor and frontend technical lead for cross-functional squad delivering against team sprint objectives.',
+      'Excels in particular at liaising with non-technical squad members such as project managers in order to align on technical feasibility, scope and prioritisation of tasks.',
+      'Led the delivery of a suite of connected react web apps enabling hospital staff to more effectively manage flow of emergency department patients through hospitals, leveraging patient data pulled from internal hospital systems and an AI-driven backend.',
+      'Able to recognise individual strengths across a team and utilise those strengths effectively to get the best outcome.',
+      'Act as development manager and mentor for junior developers.',
+    ],
+    'website': 'https://faculty.ai',
+    'jobTitle': 'Senior Frontend Engineer',
+    'company': 'Faculty',
+    'chipClass': '-coding',
+    'techStack': 'faculty',
+  },
+  'optimly': {
+    'year': '2021',
+    'yearRange': 'Oct 2021 - Dec 2021',
+    'jobDescription': [
+      'Instrumental full stack engineering role in the founding of start-up wealth and finance optimisation platform built for iOS and Android.',
+      'Principle responsibility for building the optimisation logic, both client-side and server-side. ',
+      'Built in-app finance optimiser engine using javascript, react-native and redux stack. Ensuring reliable and accurate collection of input data and server data results in a slick, tailored user experience.',
+      'Built server-side rules-engine and the contained financial algorithms to provide users with unique "optimisations" based on their given financial circumstances and externally sourced market data.',
+    ],
+    'website': 'https://optimly.co.uk',
+    'jobTitle': 'Software Engineer',
+    'company': 'Optimly',
+    'chipClass': '-coding',
+    'techStack': 'optimly'
+  },
   'helsaHelps': {
     'year': '2021',
     'jobDescription': [
@@ -8,7 +39,7 @@ export const data = {
       'Participated in Helsa\'s intensive application to Unity\'s "Rare Beauty Challenge" application as the sole software developer. Self-taught 3D game development skills in only a few weeks using Unity and C# in order to produce a proof-of-concept trailer for a VR "minority stress gaming experience".'
     ],
     'website': 'https://www.helsahelps.com',
-    'yearRange': 'Oct 2020 - Present',
+    'yearRange': 'Oct 2020 - Oct 2021',
     'jobTitle': 'Software Engineer',
     'company': 'Helsa Helps',
     'chipClass': '-coding',

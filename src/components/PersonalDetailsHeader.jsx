@@ -1,6 +1,6 @@
 import React from 'react';
 import { Paper, Typography } from '@material-ui/core';
-import profilePhoto from '../media/profilePhoto.jpg';
+import profilePhoto from '../media/profoto-crop.jpg';
 import './PersonalDetailsHeader.scss';
 import { PersonalProfileContents } from '../cvcontents/sectionContents';
 

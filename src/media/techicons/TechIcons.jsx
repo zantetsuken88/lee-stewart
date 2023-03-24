@@ -15,6 +15,9 @@ import gatsby from './gatsby.svg';
 import netlify from './netlify.svg';
 import contentful from './contentful.svg';
 import firebase from './firebase.svg';
+import redux from './redux.svg';
+import graphql from './graphql.svg';
+import docker from './docker.png';
 
 const starlingLogos = [
   java,
@@ -44,15 +47,34 @@ const helsaLogos = [
   git
 ];
 
+const optimlyLogos = [
+  typescript,
+  react,
+  java,
+  postgres,
+  redux,
+];
+
+const facultyLogos = [
+  typescript,
+  react,
+  redux,
+  graphql,
+  aws,
+  docker,
+];
+
 export const Starling = ({ iconClass }) => generateIcons(starlingLogos, iconClass);
 export const Genomics = ({ iconClass }) => generateIcons(genomicsLogos, iconClass);
 export const Helsa = ({ iconClass }) => generateIcons(helsaLogos, iconClass);
+export const Optimly = ({ iconClass }) => generateIcons(optimlyLogos, iconClass);
+export const Faculty = ({ iconClass }) => generateIcons(facultyLogos, iconClass);
 
 const generateIcons = (logos, iconClass) => logos.map((logo, i) => {
   const animationOrder = {
     '--animation-order': iconClass === 'tech-icon-show'
       ? i + 1
-      : starlingLogos.length - i
+      : logos.length - i
   };
   const iconName = logo
     .split('/')[4]

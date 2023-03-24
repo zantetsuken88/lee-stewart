@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 import { Typography } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import './TechStack.scss';
-import { Starling, Genomics, Helsa } from '../media/techicons/TechIcons';
+import { Starling, Genomics, Helsa, Optimly, Faculty } from '../media/techicons/TechIcons';
 
 const iconMapping = {
   starling: Starling,
   genomics: Genomics,
-  helsa: Helsa
+  helsa: Helsa,
+  optimly: Optimly,
+  faculty: Faculty,
 };
 
 const iconClasses = {

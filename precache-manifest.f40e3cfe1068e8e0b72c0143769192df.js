@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e44a7c215ef0588111b217b9fc1b27fe",
+    "revision": "2758d3b5e2a9fe5a6b5dd06c54cc2e29",
     "url": "/lee-stewart/index.html"
   },
   {
-    "revision": "1fa392d81e2242c8f084",
+    "revision": "9468a560032c9cf5e8bf",
     "url": "/lee-stewart/static/css/main.f04d023c.chunk.css"
   },
   {
-    "revision": "72f10d2dff89da8df237",
-    "url": "/lee-stewart/static/js/2.00f5a563.chunk.js"
+    "revision": "2a0ea3d3022cb3e11f54",
+    "url": "/lee-stewart/static/js/2.a58492cb.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/lee-stewart/static/js/2.00f5a563.chunk.js.LICENSE.txt"
+    "url": "/lee-stewart/static/js/2.a58492cb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1fa392d81e2242c8f084",
-    "url": "/lee-stewart/static/js/main.0082e026.chunk.js"
+    "revision": "9468a560032c9cf5e8bf",
+    "url": "/lee-stewart/static/js/main.aa17ac82.chunk.js"
   },
   {
     "revision": "65ae7f3ba07f2a6d795f",
@@ -40,6 +40,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lee-stewart/static/media/dmu.859442c8.svg"
   },
   {
+    "revision": "972ff7cccca1a0251b06b9dba08f43d5",
+    "url": "/lee-stewart/static/media/docker.972ff7cc.png"
+  },
+  {
+    "revision": "eade67984aef779e0d28e9d5cd93afa0",
+    "url": "/lee-stewart/static/media/faculty.eade6798.svg"
+  },
+  {
     "revision": "10b0719343408095f5a9b369e0787115",
     "url": "/lee-stewart/static/media/firebase.10b07193.svg"
   },
@@ -54,6 +62,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b53ff55e09a092f9f0cbbf74af01b715",
     "url": "/lee-stewart/static/media/github.b53ff55e.svg"
+  },
+  {
+    "revision": "5bf8a3ca0bb6bfb41063cdd672be9ad9",
+    "url": "/lee-stewart/static/media/graphql.5bf8a3ca.svg"
   },
   {
     "revision": "e4fc0f3fdbc9451d8ecc9fd3a752200f",
@@ -88,16 +100,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lee-stewart/static/media/netlify.ecb5ec57.svg"
   },
   {
+    "revision": "cb506fe74be7cba4b7c7bf3d5eeeb991",
+    "url": "/lee-stewart/static/media/optimly.cb506fe7.svg"
+  },
+  {
     "revision": "f16a2cda4a160e5aafbab5f2aa49c526",
     "url": "/lee-stewart/static/media/postgres.f16a2cda.svg"
   },
   {
-    "revision": "bc5ac94fa0360b72be4c439add53a70f",
-    "url": "/lee-stewart/static/media/profilePhoto.bc5ac94f.jpg"
+    "revision": "e9f16c178a069b945b3dbfc3ef248291",
+    "url": "/lee-stewart/static/media/profoto-crop.e9f16c17.jpg"
   },
   {
     "revision": "9a28da9f2a3fa419eb399e49f98cda39",
     "url": "/lee-stewart/static/media/react.9a28da9f.svg"
+  },
+  {
+    "revision": "5c7392a91f8cd5d997137f6b4a36870b",
+    "url": "/lee-stewart/static/media/redux.5c7392a9.svg"
   },
   {
     "revision": "49aaa66bd6ce5371ac6863bedc929833",

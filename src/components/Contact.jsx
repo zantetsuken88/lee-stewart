@@ -30,7 +30,7 @@ export default function Contact() {
         alt='GitHub'
       />
       <ContactLink
-        link='mailto:lee.stewart@alumni.dmu.ac.uk'
+        link='mailto:lee@kodobo.dev'
         img={mail}
         alt='Email'
       />

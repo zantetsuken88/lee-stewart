@@ -1,11 +1,12 @@
 import React from 'react';
 import RoleSection from './RoleSection';
 import { data } from '../cvcontents/rolesContents.jsx';
-import { StarlingLogo, GenomicsLogo, MondrianLogo, HelsaLogo, OptimlyLogo, FacultyLogo } from '../media/companyicons/CompanyIcons';
+import { StarlingLogo, GenomicsLogo, MondrianLogo, HelsaLogo, OptimlyLogo, FacultyLogo, NorisLogo } from '../media/companyicons/CompanyIcons';
 
 export default function CodingRoles () {
   return (
     <div>
+      <RoleSection data={data.noris} logo={NorisLogo} />
       <RoleSection data={data.faculty} logo={FacultyLogo} />
       <RoleSection data={data.optimly} logo={OptimlyLogo} />
       <RoleSection data={data.helsaHelps} logo={HelsaLogo}/>

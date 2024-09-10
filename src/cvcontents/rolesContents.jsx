@@ -1,13 +1,27 @@
 export const data = {
-  'faculty': {
-    'year': '2023',
-    'yearRange': 'Feb 2022 - Present',
+  'noris': {
+    'year': '2024',
+    'yearRange': 'Jan 2022 - Present',
     'jobDescription': [
-      'Individual contributor and frontend technical lead for cross-functional squad delivering against team sprint objectives.',
-      'Excels in particular at liaising with non-technical squad members such as project managers in order to align on technical feasibility, scope and prioritisation of tasks.',
-      'Led the delivery of a suite of connected react web apps enabling hospital staff to more effectively manage flow of emergency department patients through hospitals, leveraging patient data pulled from internal hospital systems and an AI-driven backend.',
-      'Able to recognise individual strengths across a team and utilise those strengths effectively to get the best outcome.',
-      'Act as development manager and mentor for junior developers.',
+      'Collaborated with a non-technical cofounder to launch the MVP of NORIS Appointment Optimiser, designed for NHS GP surgeries to enhance patient recall and optimise resource allocation.',
+      'Led the development, in partnership with another technical cofounder, of NORIS Appointment Optimiser from an MVP to a fully operational tool deployed at 5 sites and expanding.',
+      'Specialised in evaluating technical viability, setting feature timelines, prioritising fixes and enhancements, managing deployment infrastructure, and technical design of the application.'
+    ],
+    'website': 'https://noris.uk',
+    'jobTitle': 'Cofounder, Director, Full Stack Engineer',
+    'company': 'Noris Technologies Ltd',
+    'chipClass': '-coding',
+    'techStack': 'noris',
+  },
+  'faculty': {
+    'year': '2024',
+    'yearRange': 'Feb 2022 - Jul 2024',
+    'jobDescription': [
+      'Led cross-functional squads as a frontline developer, ensuring the achievement of sprint goals.',
+      'Successfully bridged technical and non-technical team members to align on project feasibility, scope, and task prioritization.',
+      'Oversaw the development of interconnected react web apps for hospital staff, integrating patient data from internal systems and utilizing an AI-driven backend for discharge predictions.',
+      'Recognized and leveraged team members\' individual strengths for optimal outcomes.',
+      'Served as a development manager and mentor to junior developers.'
     ],
     'website': 'https://faculty.ai',
     'jobTitle': 'Senior Frontend Engineer',

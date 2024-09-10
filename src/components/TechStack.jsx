@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Typography } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import './TechStack.scss';
-import { Starling, Genomics, Helsa, Optimly, Faculty } from '../media/techicons/TechIcons';
+import { Starling, Genomics, Helsa, Optimly, Faculty, Noris } from '../media/techicons/TechIcons';
 
 const iconMapping = {
   starling: Starling,
@@ -10,6 +10,7 @@ const iconMapping = {
   helsa: Helsa,
   optimly: Optimly,
   faculty: Faculty,
+  noris: Noris,
 };
 
 const iconClasses = {

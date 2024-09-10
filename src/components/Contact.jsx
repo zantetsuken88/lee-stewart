@@ -6,7 +6,7 @@ import linkedIn from '../media/linkedIn.svg';
 import PropTypes from 'prop-types';
 
 const ContactLink = ({ link, img, alt }) => (
-  <a href={link} target='_blank' rel='noopener noreferrer' className='logo'>
+  <a href={link} target='_blank' rel='noopener noreferrer'>
     <img
       src={img}
       alt={alt}
@@ -35,7 +35,7 @@ export default function Contact() {
         alt='Email'
       />
       <ContactLink
-        link='https://www.linkedin.com/in/lee-stewart-684839ba/'
+        link='https://www.linkedin.com/in/lee~stewart/'
         img={linkedIn}
         alt='LinkedIn'
       />

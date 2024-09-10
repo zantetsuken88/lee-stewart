@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2995bb7680b8929309047604e95e8de5",
+    "revision": "286acb2de6b762e836f55e42ce06732a",
     "url": "/lee-stewart/index.html"
   },
   {
-    "revision": "16c289a6b3bd52935724",
-    "url": "/lee-stewart/static/css/main.1bd561e8.chunk.css"
+    "revision": "d8525b83a99432ed94bd",
+    "url": "/lee-stewart/static/css/main.f7788c23.chunk.css"
   },
   {
-    "revision": "2a0ea3d3022cb3e11f54",
-    "url": "/lee-stewart/static/js/2.a58492cb.chunk.js"
+    "revision": "9370e8bfff07c40a90e6",
+    "url": "/lee-stewart/static/js/2.f892f5dd.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/lee-stewart/static/js/2.a58492cb.chunk.js.LICENSE.txt"
+    "url": "/lee-stewart/static/js/2.f892f5dd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "16c289a6b3bd52935724",
-    "url": "/lee-stewart/static/js/main.d5252877.chunk.js"
+    "revision": "d8525b83a99432ed94bd",
+    "url": "/lee-stewart/static/js/main.75013f08.chunk.js"
   },
   {
     "revision": "65ae7f3ba07f2a6d795f",
@@ -68,6 +68,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/lee-stewart/static/media/graphql.a28a5d40.svg"
   },
   {
+    "revision": "456445b62b007d48c80705af985e1459",
+    "url": "/lee-stewart/static/media/heroku.456445b6.svg"
+  },
+  {
     "revision": "e4fc0f3fdbc9451d8ecc9fd3a752200f",
     "url": "/lee-stewart/static/media/java.e4fc0f3f.svg"
   },
@@ -98,6 +102,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ecb5ec57f305689a6dc44a0828e4b893",
     "url": "/lee-stewart/static/media/netlify.ecb5ec57.svg"
+  },
+  {
+    "revision": "b5d25ca3c0decaea251b75c69a934e8b",
+    "url": "/lee-stewart/static/media/nextJS.b5d25ca3.svg"
+  },
+  {
+    "revision": "5c376133d6403088a87a04fcc9685674",
+    "url": "/lee-stewart/static/media/nodeJS.5c376133.svg"
+  },
+  {
+    "revision": "a5eb0823e09775a9b49f70f1cc2662be",
+    "url": "/lee-stewart/static/media/noris.a5eb0823.svg"
   },
   {
     "revision": "cb506fe74be7cba4b7c7bf3d5eeeb991",

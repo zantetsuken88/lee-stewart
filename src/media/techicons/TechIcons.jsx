@@ -18,6 +18,9 @@ import firebase from './firebase.svg';
 import redux from './redux.svg';
 import graphql from './graphql.svg';
 import docker from './docker.png';
+import nextJS from './nextJS.svg';
+import nodeJS from './nodeJS.svg';
+import heroku from './heroku.svg';
 
 const starlingLogos = [
   java,
@@ -64,11 +67,22 @@ const facultyLogos = [
   docker,
 ];
 
+const norisLogos = [
+  typescript,
+  react,
+  nodeJS,
+  nextJS,
+  redux,
+  heroku,
+  postgres,
+];
+
 export const Starling = ({ iconClass }) => generateIcons(starlingLogos, iconClass);
 export const Genomics = ({ iconClass }) => generateIcons(genomicsLogos, iconClass);
 export const Helsa = ({ iconClass }) => generateIcons(helsaLogos, iconClass);
 export const Optimly = ({ iconClass }) => generateIcons(optimlyLogos, iconClass);
 export const Faculty = ({ iconClass }) => generateIcons(facultyLogos, iconClass);
+export const Noris = ({ iconClass }) => generateIcons(norisLogos, iconClass);
 
 const generateIcons = (logos, iconClass) => logos.map((logo, i) => {
   const animationOrder = {

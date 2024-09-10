@@ -10,6 +10,7 @@ import monarch from './monarch.png';
 import helsa from './helsa.png';
 import optimly from './optimly.svg';
 import faculty from './faculty.svg';
+import noris from './noris.svg';
 import './CompanyIcons.scss';
 
 const CreateCompanyLogo = (logo) => {
@@ -30,3 +31,4 @@ export const MonarchLogo = CreateCompanyLogo(monarch);
 export const HelsaLogo = CreateCompanyLogo(helsa);
 export const OptimlyLogo = CreateCompanyLogo(optimly);
 export const FacultyLogo = CreateCompanyLogo(faculty);
+export const NorisLogo = CreateCompanyLogo(noris);

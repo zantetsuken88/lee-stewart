@@ -7,10 +7,10 @@ import PropTypes from 'prop-types';
 
 export const PersonalProfileContents = () =>
   <Typography>
-    Full stack software developer driven by a desire to solve problems, improve user and developer experience, and
-    to always be learning. Has a background in technical and creative disciplines, resulting in a broad skill-set
-    that benefits solo and team-based working. Strives to produce quality output consistently and reliably. Has had a life-long
-    obsession with technology and continues to pursue this through career goals, personal projects and self-directed learning.
+    Full stack software developer driven by a desire to pursue innovative solutions that improve user and developer experience.
+    A strong background in technical and creative disciplines, combined with matured interpersonal skills that are effective in both team based and solo working environments.
+    Able to deliver quality output consistently and reliably. A lifelong passion with technology and society consolidates personal career goals and personal projects,
+    as well as continuous self-directed learning. An asset to any team or company.
   </Typography>;
 
 export const SkillsContents = ({ attributes }) =>
@@ -24,46 +24,22 @@ SkillsContents.propTypes = {
 };
 
 export const interests = [
-  'Gaming',
-  'Technology',
   'Coding',
+  'Gaming',
   'Foreign Languages',
-  'Problem Solving',
-  'Web',
-  'Creative Writing',
-  'Personal',
   'Fitness',
-  'Socialising',
-  'Cooking and Baking'
+  'Theatre',
+  'Baking',
 ];
 
-export const backEndSkills = [
-  'Java',
-  'Guice',
-  'JUnit',
-  'Mockito',
-  'Javascript',
+export const skills = [
+  'React',
+  'React Native',
   'TypeScript',
+  'Javascript',
   'Node',
+  'Java',
   'PostgresQL',
-  'System Administration'
-];
-
-export const frontEndSkills = [
-  'Javascript',
-  'TypeScript',
   'HTML',
   'CSS',
-  'Jest',
-  'material-ui',
-  'React'
-];
-
-export const cicdSkills = [
-  'AWS',
-  'Git',
-  'Teamcity',
-  'Agile',
-  'Containerisation',
-  'Infrastructure as code'
 ];

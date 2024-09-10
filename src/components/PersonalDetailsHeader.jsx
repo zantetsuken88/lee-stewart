@@ -3,6 +3,7 @@ import { Paper, Typography } from '@material-ui/core';
 import profilePhoto from '../media/profoto-crop.jpg';
 import './PersonalDetailsHeader.scss';
 import { PersonalProfileContents } from '../cvcontents/sectionContents';
+import Contact from './Contact';
 
 export default function PersonalDetailsHeader() {
   return (
@@ -20,6 +21,7 @@ export default function PersonalDetailsHeader() {
       <div className='header-description'>
         <PersonalProfileContents/>
       </div>
+      <Contact />
     </div>
   );
 }
